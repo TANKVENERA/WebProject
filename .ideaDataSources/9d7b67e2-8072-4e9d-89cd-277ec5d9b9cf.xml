@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="webproject@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1" name="webproject">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="example"/>
+    <schema id="4" parent="1" name="information_schema"/>
+    <schema id="5" parent="1" name="mysql"/>
+    <schema id="6" parent="1" name="performance_schema"/>
+    <schema id="7" parent="1" name="sakila"/>
+    <schema id="8" parent="1" name="salecars"/>
+    <schema id="9" parent="1" name="sys"/>
+    <schema id="10" parent="1" name="world"/>
+    <table id="11" parent="2" name="t_ad"/>
+    <table id="12" parent="2" name="t_basket"/>
+    <table id="13" parent="2" name="t_carphotos"/>
+    <table id="14" parent="2" name="t_comments"/>
+    <table id="15" parent="2" name="t_message"/>
+    <table id="16" parent="2" name="t_news"/>
+    <table id="17" parent="2" name="t_servermessage"/>
+    <table id="18" parent="2" name="t_user"/>
+    <table id="19" parent="2" name="t_user_servermessage"/>
+    <column id="20" parent="11" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="21" parent="11" name="fk_Basket">
+      <Position>6</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="22" parent="11" name="markAuto">
+      <Position>7</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="23" parent="11" name="modelAuto">
+      <Position>9</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="24" parent="11" name="price">
+      <Position>10</Position>
+      <DataType>int(6)|0</DataType>
+    </column>
+    <column id="25" parent="11" name="yearOfIssue">
+      <Position>12</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="26" parent="11" name="fk_User">
+      <Position>13</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="27" parent="11" name="F_CARDESCRIPTION">
+      <Position>3</Position>
+      <DataType>varchar(2000)|0</DataType>
+    </column>
+    <column id="28" parent="11" name="bodyStyle">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="29" parent="11" name="color">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="30" parent="11" name="engine">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="31" parent="11" name="mileAge">
+      <Position>8</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="32" parent="11" name="transmission">
+      <Position>11</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <index id="33" parent="11" name="FK362BCE47AF0246">
+      <ColNames>fk_User</ColNames>
+    </index>
+    <index id="34" parent="11" name="FK362BCED530B23C">
+      <ColNames>fk_Basket</ColNames>
+    </index>
+    <key id="35" parent="11" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="36" parent="11" name="FK362BCED530B23C">
+      <ColNames>fk_Basket</ColNames>
+      <RefSchemaName>webproject</RefSchemaName>
+      <RefTableName>t_basket</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="37" parent="11" name="FK362BCE47AF0246">
+      <ColNames>fk_User</ColNames>
+      <RefSchemaName>webproject</RefSchemaName>
+      <RefTableName>t_user</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="38" parent="12" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="39" parent="12" name="fk_User">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="40" parent="12" name="FK60400BF147AF0246">
+      <ColNames>fk_User</ColNames>
+    </index>
+    <key id="41" parent="12" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="42" parent="12" name="FK60400BF147AF0246">
+      <ColNames>fk_User</ColNames>
+      <RefSchemaName>webproject</RefSchemaName>
+      <RefTableName>t_user</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="43" parent="13" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="44" parent="13" name="F_FilePath">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="45" parent="13" name="FK_CarPhotos">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="46" parent="13" name="FK6614DF4A6182B74">
+      <ColNames>FK_CarPhotos</ColNames>
+    </index>
+    <key id="47" parent="13" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="48" parent="13" name="FK6614DF4A6182B74">
+      <ColNames>FK_CarPhotos</ColNames>
+      <RefSchemaName>webproject</RefSchemaName>
+      <RefTableName>t_ad</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="49" parent="14" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="50" parent="14" name="fk_Ad">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="51" parent="14" name="text">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="52" parent="14" name="fk_User">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="53" parent="14" name="FK92C4515F11EC2EF6">
+      <ColNames>fk_Ad</ColNames>
+    </index>
+    <index id="54" parent="14" name="FK92C4515F47AF0246">
+      <ColNames>fk_User</ColNames>
+    </index>
+    <key id="55" parent="14" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="56" parent="14" name="FK92C4515F11EC2EF6">
+      <ColNames>fk_Ad</ColNames>
+      <RefSchemaName>webproject</RefSchemaName>
+      <RefTableName>t_ad</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="57" parent="14" name="FK92C4515F47AF0246">
+      <ColNames>fk_User</ColNames>
+      <RefSchemaName>webproject</RefSchemaName>
+      <RefTableName>t_user</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="58" parent="15" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="59" parent="15" name="fk_UserSent">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="60" parent="15" name="text">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="61" parent="15" name="userReceivedId">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="62" parent="15" name="FKF47CF33CDB4DC75E">
+      <ColNames>fk_UserSent</ColNames>
+    </index>
+    <key id="63" parent="15" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="64" parent="15" name="FKF47CF33CDB4DC75E">
+      <ColNames>fk_UserSent</ColNames>
+      <RefSchemaName>webproject</RefSchemaName>
+      <RefTableName>t_user</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="65" parent="16" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="66" parent="16" name="date">
+      <Position>2</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="67" parent="16" name="fk_User">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="68" parent="16" name="text">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <index id="69" parent="16" name="FKCB606BBE47AF0246">
+      <ColNames>fk_User</ColNames>
+    </index>
+    <key id="70" parent="16" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="71" parent="16" name="FKCB606BBE47AF0246">
+      <ColNames>fk_User</ColNames>
+      <RefSchemaName>webproject</RefSchemaName>
+      <RefTableName>t_user</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="72" parent="17" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="73" parent="17" name="text">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="74" parent="17" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="75" parent="18" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="76" parent="18" name="email">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="77" parent="18" name="login">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="78" parent="18" name="password">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="79" parent="18" name="PRIMARY">
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="80" parent="19" name="fk_User">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="81" parent="19" name="fk_ServerMessage">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="82" parent="19" name="FKA1276F7B47AF0246">
+      <ColNames>fk_User</ColNames>
+    </index>
+    <index id="83" parent="19" name="FKA1276F7BD3CDD1F8">
+      <ColNames>fk_ServerMessage</ColNames>
+    </index>
+    <key id="84" parent="19" name="PRIMARY">
+      <ColNames>fk_User
+fk_ServerMessage</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="85" parent="19" name="FKA1276F7B47AF0246">
+      <ColNames>fk_User</ColNames>
+      <RefSchemaName>webproject</RefSchemaName>
+      <RefTableName>t_user</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="86" parent="19" name="FKA1276F7BD3CDD1F8">
+      <ColNames>fk_ServerMessage</ColNames>
+      <RefSchemaName>webproject</RefSchemaName>
+      <RefTableName>t_servermessage</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+  </database-model>
+</dataSource>
