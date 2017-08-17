@@ -1,8 +1,6 @@
 package ru.mail.mina.repository.model;
 
 
-
-
 import org.hibernate.annotations.*;
 
 import javax.persistence.*;
@@ -34,10 +32,14 @@ public class User implements Serializable {
 
     private String password;
 
+    @Column(name = "F_ROLE")
+    @Enumerated(EnumType.STRING)
+    private Role role;
+
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "user", cascade = CascadeType.ALL)
     private Set<Ad> ads = new HashSet<>();
 
-    @OneToMany (fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinColumn(name = "fk_User")
     private Set<News> news = new HashSet<>();
 
@@ -51,9 +53,9 @@ public class User implements Serializable {
     @JoinColumn(name = "fk_UserSent")
     private Set<Message> messages = new HashSet<>();
 
-    @ManyToMany(fetch = FetchType.LAZY, cascade ={CascadeType.ALL, CascadeType.REMOVE})
-    @JoinTable (name = "t_user_serverMessage", joinColumns = {@JoinColumn(name = "fk_User", referencedColumnName = "id")},
-    inverseJoinColumns = {@JoinColumn(name = "fk_ServerMessage", referencedColumnName = "id")})
+    @ManyToMany(fetch = FetchType.LAZY, cascade = {CascadeType.ALL, CascadeType.REMOVE})
+    @JoinTable(name = "t_user_serverMessage", joinColumns = {@JoinColumn(name = "fk_User", referencedColumnName = "id")},
+            inverseJoinColumns = {@JoinColumn(name = "fk_ServerMessage", referencedColumnName = "id")})
     private Set<ServerMessage> serverMessages = new HashSet<>();
 
     public User() {
@@ -138,6 +140,14 @@ public class User implements Serializable {
 
     public void setServerMessages(Set<ServerMessage> serverMessages) {
         this.serverMessages = serverMessages;
+    }
+
+    public Role getRole() {
+        return role;
+    }
+
+    public void setRole(Role role) {
+        this.role = role;
     }
 
     @Override

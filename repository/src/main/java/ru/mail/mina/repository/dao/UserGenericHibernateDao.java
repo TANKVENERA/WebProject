@@ -9,5 +9,5 @@ public interface UserGenericHibernateDao extends GenericHibernateDao<User, Integ
 
    User getUserByAd (Integer adId);
 
-   User getByUserName(String name);
+   User getByUserName(String login);
 }

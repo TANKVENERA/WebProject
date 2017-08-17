@@ -1,0 +1,13 @@
+ru\mail\mina\web\config\WebMVCConfig.class
+ru\mail\mina\web\config\HibernateConfig.class
+ru\mail\mina\web\CreateFormServlet.class
+ru\mail\mina\web\AdController.class
+ru\mail\mina\web\UserController.class
+ru\mail\mina\web\StartPageController.class
+ru\mail\mina\web\initializer\SecurityWebApplicationInitializer.class
+ru\mail\mina\web\config\SecurityConfig.class
+ru\mail\mina\web\config\AppConfig.class
+ru\mail\mina\web\ImagesServlet.class
+ru\mail\mina\web\initializer\ApplicationInitializer.class
+ru\mail\mina\web\AutoSaleServlet.class
+ru\mail\mina\web\UploadImage.class
