@@ -38,7 +38,6 @@ public abstract class GenericHibernateDaoImpl<T extends Serializable, ID extends
 
 
     @Override
-
     public ID insert(T entity) {
         return (ID) getSession().save(entity);
     }

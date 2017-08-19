@@ -19,40 +19,29 @@ import java.util.List;
 @Repository("userDao")
 public class UserHibernateDaoImpl extends GenericHibernateDaoImpl<User, Integer> implements UserGenericHibernateDao {
 
-    private Session session;
-
-    private static UserHibernateDaoImpl userHibernateDao = null;
-
-    /*
+    /**
     Initializing superClass with the type User
      */
-
-
     public UserHibernateDaoImpl() {
         super(User.class);
     }
 
-    public static UserHibernateDaoImpl getInstance() {
-        if (userHibernateDao == null){
-            userHibernateDao = new UserHibernateDaoImpl();
-        }
-        return userHibernateDao;
-    }
+
 
     @Override
     public User getUserByAd(Integer adId) {
         User user = null;
         try {
         //    session = HibernateUtil.getSessionFactory().openSession();
-            session.beginTransaction();
+            getSession().beginTransaction();
             String hql = "SELECT ad.user  from Ad ad WHERE ad.id=:adId ";
-            Query query = session.createQuery(hql);
+            Query query =  getSession().createQuery(hql);
             query.setParameter("adId", adId); // set a parameter for transfering  adId value into hql query
             user = (User) query.list().get(0);
-            session.getTransaction().commit();
+            getSession().getTransaction().commit();
         } catch (Exception e) {
         } finally {
-            if (session != null && session.isOpen()) {
+            if ( getSession() != null &&  getSession().isOpen()) {
             }
         }
 
@@ -60,12 +49,11 @@ public class UserHibernateDaoImpl extends GenericHibernateDaoImpl<User, Integer>
     }
 
     @Override
-    public User getByUserName(String login) {
-       // session = HibernateUtil.getSessionFactory().openSession();
-        session.beginTransaction();
-        String hql = "From User  u where u.login=:login";
-        Query query = session.createQuery(hql);
-        query.setParameter("login", login);
+    @Transactional
+    public User getByUserName(String username) {
+        String hql = "From User  u where u.username=:username";
+        Query query =  getSession().createQuery(hql);
+        query.setParameter("username", username);
         User user = (User) query.uniqueResult();
         return user;
     }

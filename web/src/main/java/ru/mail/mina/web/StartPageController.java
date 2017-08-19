@@ -12,7 +12,7 @@ import ru.mail.mina.service.modelDTO.UserDTO;
 @Controller
 public class StartPageController {
 
-    @RequestMapping( value = {"/"}, method = RequestMethod.GET)
+    @RequestMapping( value = {"/", "login"}, method = RequestMethod.GET)
     public String showStartPage(Model model) {
     model.addAttribute("user", new UserDTO());
         System.out.println("hi");

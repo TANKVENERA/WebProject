@@ -446,6 +446,10 @@ input[profile]{
 .main a {
     text-decoration: none;
 }
+.bg-danger{
+    color: red;
+    font-size: 12px;
+}
 
 
 

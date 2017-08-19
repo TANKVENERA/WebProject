@@ -20,6 +20,7 @@ D:\WebProject\repository\src\main\java\ru\mail\mina\repository\model\News.java
 D:\WebProject\repository\src\main\java\ru\mail\mina\repository\dao\UserGenericHibernateDao.java
 D:\WebProject\repository\src\main\java\ru\mail\mina\repository\impl\BasketGenericHibernateDaoImpl.java
 D:\WebProject\repository\src\main\java\ru\mail\mina\repository\dao\CarPhotosGenericHibernateDao.java
+D:\WebProject\repository\src\main\java\ru\mail\mina\repository\model\Role.java
 D:\WebProject\repository\src\main\java\ru\mail\mina\repository\impl\CommentGenericHibernateDaoImpl.java
 D:\WebProject\repository\src\main\java\ru\mail\mina\repository\impl\CarPhotosGenericHibernateDaoImpl.java
 D:\WebProject\repository\src\main\java\ru\mail\mina\repository\dao\ServerMessageHibernateDao.java

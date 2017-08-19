@@ -12,7 +12,7 @@ public class UserDTO {
 
     private Integer id;
 
-    private String login;
+    private String username;
 
     private String email;
 
@@ -35,7 +35,7 @@ public class UserDTO {
 
     public UserDTO (User user) {
         this.id = user.getId();
-        this.login = user.getLogin();
+        this.username = user.getUsername();
         this.email = user.getEmail();
         this.password = user.getPassword();
         this.ads = user.getAds();
@@ -55,12 +55,12 @@ public class UserDTO {
         this.id = id;
     }
 
-    public String getLogin() {
-        return login;
+    public String getUsername() {
+        return username;
     }
 
-    public void setLogin(String login) {
-        this.login = login;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getEmail() {

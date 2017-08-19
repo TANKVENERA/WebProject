@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * Created by Администратор on 16.08.2017.
  */
-@Service("AdService")
+@Service
 public class AdServiceImpl implements AdService {
 
     private final AdGenericHibernateDao adGenericHibernateDao;

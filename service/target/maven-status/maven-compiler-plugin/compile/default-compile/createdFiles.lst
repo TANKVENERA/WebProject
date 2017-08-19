@@ -1,10 +1,12 @@
 ru\mail\mina\service\modelDTO\ServerMessageDTO.class
 ru\mail\mina\service\modelDTO\MessageDTO.class
-ru\mail\mina\service\implDTO\UserServicempl.class
 ru\mail\mina\service\dto\AdService.class
+ru\mail\mina\service\implDTO\UserServiceImpl.class
+ru\mail\mina\service\modelDTO\AppUserPrincipal.class
 ru\mail\mina\service\modelDTO\BasketDTO.class
 ru\mail\mina\service\implDTO\AdServiceImpl.class
 ru\mail\mina\service\modelDTO\AdDTO.class
+ru\mail\mina\service\implDTO\AppUserDetailsServiceImpl.class
 ru\mail\mina\service\modelDTO\NewsDTO.class
 ru\mail\mina\service\dto\UserService.class
 ru\mail\mina\service\modelDTO\UserDTO.class

@@ -22,6 +22,7 @@ ru\mail\mina\repository\dao\CommentGenericHibernateDao.class
 ru\mail\mina\repository\dao\ServerMessageHibernateDao.class
 ru\mail\mina\repository\impl\CommentGenericHibernateDaoImpl.class
 ru\mail\mina\repository\model\User.class
+ru\mail\mina\repository\model\Role.class
 ru\mail\mina\repository\dao\UserGenericHibernateDao.class
 ru\mail\mina\repository\impl\BasketGenericHibernateDaoImpl.class
 ru\mail\mina\repository\dao\AdGenericHibernateDao.class

@@ -37,7 +37,6 @@ public class AdController {
         String yearTo = request.getParameter("YearOfIssueTo");
         String priceFrom = request.getParameter("PriceFrom");
         String priceTo = request.getParameter("PriceTo");
-
 //        System.out.println(model);
 //        System.out.println(mark);
 //        System.out.println(yearFrom);

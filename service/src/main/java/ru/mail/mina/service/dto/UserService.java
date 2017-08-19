@@ -1,6 +1,7 @@
 package ru.mail.mina.service.dto;
 
 import org.springframework.stereotype.Service;
+import ru.mail.mina.repository.model.User;
 import ru.mail.mina.service.modelDTO.UserDTO;
 
 /**
@@ -10,5 +11,7 @@ import ru.mail.mina.service.modelDTO.UserDTO;
 public interface UserService {
 
     Integer saveUser (UserDTO userDTO);
+
+    UserDTO GetByUserName(String username);
 
 }

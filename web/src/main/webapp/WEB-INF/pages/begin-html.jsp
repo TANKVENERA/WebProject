@@ -1,6 +1,9 @@
 <%@ page language="java" contentType="text/html; UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="f" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -70,15 +73,21 @@
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-15">
                     <div class="col-md-5" align="right" style="margin-right: -50px">
-                        <form action="" class="form-inline navbar-form" method="POST">
-                            <div class="form-group">
-                                <label for="logininput" class="sr-only">Login</label>
-                                <input type="login" name="logininput" size="16" class="form-control" id="logininput"
+                        <form action="${pageContext.request.contextPath}/login" class="form-inline navbar-form" method="POST">
+                                <c:if test="${param['error']}">
+                                    <div class="form-group" >
+                                <p class="bg-danger" style="margin-left: -200px; font-size: 15px">Username or password is not valid</p>
+                            </div>
+                                </c:if>
+                            <div class="form-group" >
+                                <label for="username" class="sr-only">Login</label>
+                                <input type="username" name="username" size="16" class="form-control" id="username"
                                        placeholder="Login" required="">
+
                             </div>
                             <div class="form-group" >
-                                <label for="passwordinput" class="sr-only">Password</label>
-                                <input type="password" name="password" size="16" class="form-control" id="passwordinput"
+                                <label for="password" class="sr-only">Password</label>
+                                <input type="password" name="password" size="16" class="form-control" id="password"
                                        placeholder="Password" required="">
                             </div>
                             <button type="submit" class="btn btn-default">Войти</button>
@@ -86,19 +95,19 @@
                     </div>
                     <div class="col-md-1">
                         <div  class="form-inline navbar-form">
-                            <button  class="btn btn-default"><a href="${pageContext.request.contextPath}/register" class="registerLink"
+                            <button  class="btn btn-default"><a href="${pageContext.request.contextPath}/#register" class="registerLink"
                                                                 style="text-decoration: none">
                                 Регистрация</a></button>
                         </div>
                     </div>
-                    <div class="modal_container" id="register">
+                    <div class="modal_container" id="register" >
                         <div class="Mymodal">
-                            <a href="#" class="close">X</a>
+                            <a href="${pageContext.request.contextPath}/close" class="close">X</a>
                             <span class="modal_head">
                   REGISTRATION
                 </span>
-                            <f:form  method="POST" modelAttribute="user" action="${pageContext.request.contextPath}/profile">
-                                <f:input  modal="m" path="login"  type="text" placeholder="Имя"/><br>
+                            <f:form  method="POST" modelAttribute="user" action="${pageContext.request.contextPath}/register">
+                                <f:input  modal="m" path="username"  type="text" placeholder="Имя"/><br>
                                 <f:input modal="m" path="email" type="text"  placeholder="Адрес почты"/><br>
                                 <f:input modal="m" path="password" type="text" placeholder="Пароль"/><br>
                                 <input modal="m"  type="submit" name="save" class="BtnRegister"
@@ -120,9 +129,12 @@
                     <!--clearfix - чтобы сохранить цвет если элементы расходятся по разным сторонам-->
                     <ul>
                         <li class="active"><a href="${pageContext.request.contextPath}/">Главная</a></li>
-                        <li><a href="${pageContext.request.contextPath}/profile">Профиль</a></li>
-                        <li><a href="${pageContext.request.contextPath}">Еще ссылка</a></li>
+                        <li><a href="${pageContext.request.contextPath}/">Новости</a></li>
+                        <li><a href="${pageContext.request.contextPath}">Объявления</a></li>
                         <li><a href="${pageContext.request.contextPath}/ad">Форма</a></li>
+                        <security:authorize access="isAuthenticated()">
+                            <li><a href="${pageContext.request.contextPath}/profile">Профиль</a></li>
+                        </security:authorize>
                     </ul>
                     <div class="top_contacts"><i class="fa fa-mobile fa-x" aria-hidden="true"></i> 300-800-900</div>
                 </nav>

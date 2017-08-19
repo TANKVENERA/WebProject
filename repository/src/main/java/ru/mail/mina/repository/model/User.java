@@ -1,8 +1,6 @@
 package ru.mail.mina.repository.model;
 
 
-import org.hibernate.annotations.*;
-
 import javax.persistence.*;
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
@@ -26,7 +24,7 @@ public class User implements Serializable {
     @GeneratedValue(strategy = IDENTITY)
     private Integer id;
 
-    private String login;
+    private String username;
 
     private String email;
 
@@ -70,12 +68,12 @@ public class User implements Serializable {
         this.id = id;
     }
 
-    public String getLogin() {
-        return login;
+    public String getUsername() {
+        return username;
     }
 
-    public void setLogin(String login) {
-        this.login = login;
+    public void setUsername(String login) {
+        this.username = login;
     }
 
     public String getEmail() {
@@ -156,23 +154,24 @@ public class User implements Serializable {
         if (o == null || getClass() != o.getClass()) return false;
         User user = (User) o;
         return Objects.equals(id, user.id) &&
-                Objects.equals(login, user.login) &&
+                Objects.equals(username, user.username) &&
                 Objects.equals(email, user.email) &&
                 Objects.equals(password, user.password);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, login, email, password);
+        return Objects.hash(id, username, email, password);
     }
 
     @Override
     public String toString() {
         return "User{" +
                 "id=" + id +
-                ", login='" + login + '\'' +
+                ", username='" + username + '\'' +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
+                ", role=" + role +
                 ", ads=" + ads +
                 '}';
     }

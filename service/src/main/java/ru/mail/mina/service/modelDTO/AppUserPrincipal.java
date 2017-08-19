@@ -12,6 +12,7 @@ import java.util.Collections;
 /**
  * Created by Администратор on 17.08.2017.
  */
+
 public class AppUserPrincipal implements UserDetails {
 
     private User user;
@@ -19,9 +20,9 @@ public class AppUserPrincipal implements UserDetails {
 
     public AppUserPrincipal(User user) {
         this.user = user;
-        grantedAuthorities = Collections.singletonList(
-                new SimpleGrantedAuthority(user.getRole().name())
-        );
+//        grantedAuthorities = Collections.singletonList(
+//                new SimpleGrantedAuthority(user.getRole().name())
+//        );
     }
 
     public Integer getUserId() {
@@ -44,7 +45,7 @@ public class AppUserPrincipal implements UserDetails {
 
     @Override
     public String getUsername() {
-        return user.getLogin();
+        return user.getUsername();
     }
 
     @Override

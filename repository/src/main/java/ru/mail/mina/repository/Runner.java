@@ -22,7 +22,7 @@ public class Runner {
         User user = new User();
        user.setEmail("Mina@");
        user.setPassword("123456");
-       user.setLogin("friva");
+       user.setUsername("friva");
         UserGenericHibernateDao userDao = (UserGenericHibernateDao) context.getBean("userDao");
 
         userDao.insert(user);

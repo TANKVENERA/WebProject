@@ -1,51 +1,51 @@
 <%@ include file="begin-html.jsp" %>
 <%@ page language="java" contentType="text/html; UTF-8" pageEncoding="UTF-8" %>
-    <div class="container-fluid">
-        <form action="${pageContext.request.contextPath}/selectAds" class="form-inline navbar-form" method="POST">
-            <div inline="eee">
-                <select name="CarModel" id="level" onchange="showNames(this.value)" class="option">
-                    <option value="Start">Модель</option>
-                    <option value="Alfa_Romeo">Alfa Romeo</option>
-                    <option value="Audi">Audi</option>
-                    <option value="Acura">Acura</option>
-                    <option value="BMW">BMW</option>
-                    <option value="Cadillac">Cadillac</option>
-                    <option value="Chevrolet">Chevrolet</option>
-                    <option value="Chrysler">Chrysler</option>
-                    <option value="Citroen">Citroen</option>
-                    <option value="Daewoo">Daewoo</option>
-                    <option value="Fiat">Fiat</option>
-                    <option value="Ford">Ford</option>
-                    <option value="Honda">Honda</option>
-                    <option value="Hyundai">Hyundai</option>
-                    <option value="Toyota">Toyota</option>
-                    <option value="Audi">Audi</option>
-                    <option value="Toyota">Toyota</option>
-                    <option value="Mercedes_Benz">Mercedes_Benz</option>
-                    <option value="Volkswagen">Volkswagen</option>
-                </select>
-            </div>
-            <div inline="eee" class="option">
-                <select name="CarMark" id="model">
-                </select>
-            </div>
-            <div inline="eee">
-                <input title="qwert"  name="YearOfIssueFrom" size="16" id="YearOfIssueFrom" placeholder="Год выпуска с">
-            </div>
-            <div inline="eee">
-                <input title="qwert" name="YearOfIssueTo" size="16" id="YearOfIssueTo" placeholder="Год выпуска по">
-            </div>
-            <div inline="eee">
-                <input title="qwert" name="PriceFrom" size="16" id="PriceFrom" placeholder="Цена с $">
-            </div>
-            <div inline="eee">
-                <input title="qwert" name="PriceTo" size="16" id="PriceTo" placeholder="Цена по $">
-            </div>
-            <div inline="eee">
-                <button submit="submit" type="submit">Submit</button>
-            </div>
-        </form>
-    </div>
+<div class="container-fluid">
+    <form action="${pageContext.request.contextPath}/selectAds" class="form-inline navbar-form" method="POST">
+        <div inline="eee">
+            <select name="CarModel" id="level" onchange="showNames(this.value)" class="option">
+                <option value="Start">Модель</option>
+                <option value="Alfa_Romeo">Alfa Romeo</option>
+                <option value="Audi">Audi</option>
+                <option value="Acura">Acura</option>
+                <option value="BMW">BMW</option>
+                <option value="Cadillac">Cadillac</option>
+                <option value="Chevrolet">Chevrolet</option>
+                <option value="Chrysler">Chrysler</option>
+                <option value="Citroen">Citroen</option>
+                <option value="Daewoo">Daewoo</option>
+                <option value="Fiat">Fiat</option>
+                <option value="Ford">Ford</option>
+                <option value="Honda">Honda</option>
+                <option value="Hyundai">Hyundai</option>
+                <option value="Toyota">Toyota</option>
+                <option value="Audi">Audi</option>
+                <option value="Toyota">Toyota</option>
+                <option value="Mercedes_Benz">Mercedes_Benz</option>
+                <option value="Volkswagen">Volkswagen</option>
+            </select>
+        </div>
+        <div inline="eee" class="option">
+            <select name="CarMark" id="model">
+            </select>
+        </div>
+        <div inline="eee">
+            <input title="qwert"  name="YearOfIssueFrom" size="16" id="YearOfIssueFrom" placeholder="Год выпуска с">
+        </div>
+        <div inline="eee">
+            <input title="qwert" name="YearOfIssueTo" size="16" id="YearOfIssueTo" placeholder="Год выпуска по">
+        </div>
+        <div inline="eee">
+            <input title="qwert" name="PriceFrom" size="16" id="PriceFrom" placeholder="Цена с $">
+        </div>
+        <div inline="eee">
+            <input title="qwert" name="PriceTo" size="16" id="PriceTo" placeholder="Цена по $">
+        </div>
+        <div inline="eee">
+            <button submit="submit" type="submit">Submit</button>
+        </div>
+    </form>
+</div>
 <div class="col-md-2">
     <aside class="aside">
         <ul>
