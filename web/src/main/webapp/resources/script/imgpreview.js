@@ -8,8 +8,6 @@ $(document).ready(function () {
             imgpreview.empty();
             if ((imgExt == "gif" || imgExt == "png" || imgExt == "jpg" || imgExt == "bmp" || imgExt == "jpeg" ) && imgCount<=10) {
                 if (typeof(FileReader) != "undefined" ) {
-
-
                     for (var i = 0; i < imgCount; i++) {
                         var reader = new FileReader();
                         var fn = imgItem[i].name;
@@ -29,9 +27,7 @@ $(document).ready(function () {
                         reader.readAsDataURL($(this)[0].files[i]);
                     }
                 } else {
-
                     imgpreview.html("Неверный тип или кол-во превышает допустимое")
-
                 }
             } else {
 

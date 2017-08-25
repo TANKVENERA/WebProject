@@ -57,7 +57,6 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                                 data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -66,24 +65,24 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#"><img
+                        <a class="navbar-brand" href="${pageContext.request.contextPath}/"><img
                                 src="${pageContext.request.contextPath}/resources/images/porshe.jpg" alt="img"
                                 class="img-circle"></a>
                     </div>
                 </div>
+                <security:authorize access="isAnonymous()">
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-15">
                     <div class="col-md-5" align="right" style="margin-right: -50px">
                         <form action="${pageContext.request.contextPath}/login" class="form-inline navbar-form" method="POST">
                                 <c:if test="${param['error']}">
                                     <div class="form-group" >
-                                <p class="bg-danger" style="margin-left: -200px; font-size: 15px">Username or password is not valid</p>
+                                <p class="bg-danger" style="margin-left: -200px;">Username or password is not valid!</p>
                             </div>
                                 </c:if>
                             <div class="form-group" >
                                 <label for="username" class="sr-only">Login</label>
                                 <input type="username" name="username" size="16" class="form-control" id="username"
                                        placeholder="Login" required="">
-
                             </div>
                             <div class="form-group" >
                                 <label for="password" class="sr-only">Password</label>
@@ -94,12 +93,26 @@
                         </form>
                     </div>
                     <div class="col-md-1">
-                        <div  class="form-inline navbar-form">
+                        <div  class="form-inline navbar-form" >
                             <button  class="btn btn-default"><a href="${pageContext.request.contextPath}/#register" class="registerLink"
-                                                                style="text-decoration: none">
+                                                                style="text-decoration: none; margin-right: 0em">
                                 Регистрация</a></button>
                         </div>
                     </div>
+                    </security:authorize>
+                    <security:authorize access="isAuthenticated()">
+                        <div >
+                        <div style="display: inline-block; ">
+                            <p  style=" font-size: 25px; font-weight: 600; color: whitesmoke; margin-right: 4em; margin-left: 8em">Welcome!:
+                                <security:authentication property="principal.username"></security:authentication></p>
+                        </div>
+                        <div    style=" display: inline-block; ">
+                            <button  class="btn btn-default"><a href="<c:url value="/logout" />" class="registerLink"
+                                                                style="text-decoration: none;">
+                                Выход</a></button>
+                        </div>
+                        </div>
+                    </security:authorize>
                     <div class="modal_container" id="register" >
                         <div class="Mymodal">
                             <a href="${pageContext.request.contextPath}/close" class="close">X</a>
@@ -129,11 +142,15 @@
                     <!--clearfix - чтобы сохранить цвет если элементы расходятся по разным сторонам-->
                     <ul>
                         <li class="active"><a href="${pageContext.request.contextPath}/">Главная</a></li>
-                        <li><a href="${pageContext.request.contextPath}/">Новости</a></li>
-                        <li><a href="${pageContext.request.contextPath}">Объявления</a></li>
-                        <li><a href="${pageContext.request.contextPath}/ad">Форма</a></li>
+                        <li><a href="${pageContext.request.contextPath}/allNews">Новости</a></li>
+                        <li><a href="${pageContext.request.contextPath}/getAllAds">Объявления</a></li>
                         <security:authorize access="isAuthenticated()">
-                            <li><a href="${pageContext.request.contextPath}/profile">Профиль</a></li>
+                            <security:authorize access="hasRole('ROLE_User')">
+                                <li><a href="${pageContext.request.contextPath}/profile">Профиль</a></li></security:authorize>
+                            <security:authorize access="hasRole('ROLE_Admin')">
+                                <li><a href="${pageContext.request.contextPath}/admin">Администратор</a></li></security:authorize>
+                            <security:authorize access="hasRole('ROLE_SuperAdmin')">
+                                <li><a href="${pageContext.request.contextPath}/profile">СуперАдминистратор</a></li></security:authorize>
                         </security:authorize>
                     </ul>
                     <div class="top_contacts"><i class="fa fa-mobile fa-x" aria-hidden="true"></i> 300-800-900</div>

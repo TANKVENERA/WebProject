@@ -12,4 +12,5 @@ public interface AdGenericHibernateDao extends GenericHibernateDao<Ad, Integer> 
 
         List<Ad> filter (String model, String mark, String yearFrom, String yearTo, String priceFrom,
                          String priceTo);
+
 }

@@ -448,8 +448,23 @@ input[profile]{
 }
 .bg-danger{
     color: red;
-    font-size: 12px;
+    font-size: 16px;
 }
+.news {
+    border: 2px solid black;
+    background-color: #ededed;
+    height: 645px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, .80);
+    width: max-content;
+    margin: 10px auto;
+}
+.news_title{
+    font-family: CTCSplashRounded;
+    letter-spacing: 6px;
+    font-size: 25px;
+}
+
 
 
 

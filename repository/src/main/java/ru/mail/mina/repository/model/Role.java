@@ -6,5 +6,5 @@ package ru.mail.mina.repository.model;
 public enum Role {
     ROLE_User,
     ROLE_Admin,
-    Role_SuperAdmin
+    ROLE_SuperAdmin
 }

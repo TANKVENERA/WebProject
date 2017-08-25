@@ -52,9 +52,9 @@ public class Ad implements Serializable {
     @JoinColumn(name = "fk_Ad")
     private Set<Comment> comments = new HashSet<>();
 
-    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-    @JoinColumn(name = "FK_CarPhotos")
-    private List<CarPhotos> carPhotos = new LinkedList<>();
+//    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+//    @JoinColumn(name = "FK_CarPhotos")
+//    private List<FileEntity> carPhotos = new LinkedList<>();
 
     public Ad() {
 
@@ -132,13 +132,13 @@ public class Ad implements Serializable {
         this.comments = comments;
     }
 
-    public List<CarPhotos> getCarPhotos() {
-        return carPhotos;
-    }
-
-    public void setCarPhotos(List<CarPhotos> carPhotos) {
-        this.carPhotos = carPhotos;
-    }
+//    public List<FileEntity> getCarPhotos() {
+//        return carPhotos;
+//    }
+//
+//    public void setCarPhotos(List<FileEntity> carPhotos) {
+//        this.carPhotos = carPhotos;
+//    }
 
     public String getTransmission() {
         return transmission;
@@ -213,7 +213,6 @@ public class Ad implements Serializable {
                 ", bodyStyle='" + bodyStyle + '\'' +
                 ", carDescription='" + carDescription + '\'' +
                 ", fk_Basket=" + fk_Basket +
-                ", carPhotos=" + carPhotos +
                 '}';
     }
 }

@@ -2,6 +2,7 @@ package ru.mail.mina.service.dto;
 
 import org.springframework.stereotype.Service;
 import ru.mail.mina.repository.model.Ad;
+import ru.mail.mina.service.modelDTO.AdDTO;
 
 import java.util.List;
 
@@ -11,6 +12,8 @@ import java.util.List;
 @Service
 public interface AdService {
 
-    List<Ad> filterAd(String model, String mark, String yearFrom, String yearTo, String priceFrom,
-                     String priceTo);
+    List<AdDTO> filterAd(String model, String mark, String yearFrom, String yearTo, String priceFrom,
+                         String priceTo);
+
+    List<AdDTO> findAll();
 }

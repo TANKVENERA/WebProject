@@ -41,27 +41,25 @@ public class UserServiceImpl implements UserService {
         return userGenericHibernateDao.insert(user);
     }
 
-    //    private static  UserHibernateDaoImpl userHibernateDao = UserHibernateDaoImpl.getInstance();
-//    @Transactional
-//    public Integer insert(UserDTO userDTO) {
-//        Integer number = null;
-//        User user = new User();
-//        user.setUsername(userDTO.getUsername());
-//        user.setEmail(userDTO.getEmail());
-//        user.setPassword(userDTO.getPassword());
-//        try {
-//            number = userGenericHibernateDao.insert(user);
-//        } catch (Exception e) {
-//        } finally {
-//        }
-//        return number;
-//    }
+    @Override
+    @Transactional
+    public void update(UserDTO userDTO) {
+        User user = UserConverter.convert(userDTO);
+        userGenericHibernateDao.update(user);
+    }
 
     @Override
     @Transactional
-    public UserDTO GetByUserName(String username) {
+    public UserDTO getByUserName(String username) {
         User user = userGenericHibernateDao.getByUserName(username);
         UserDTO userDTO = UserConverter.convert(user);
         return userDTO;
+    }
+
+    @Override
+    @Transactional
+    public void saveOrUpdate(UserDTO userDTO) {
+       User user = UserConverter.convert(userDTO);
+       userGenericHibernateDao.saveOrUpdate(user);
     }
 }

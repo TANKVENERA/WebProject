@@ -33,7 +33,7 @@ public abstract class GenericHibernateDaoImpl<T extends Serializable, ID extends
     }
 
     protected Session getSession() {
-        return this.sessionFactory.openSession();
+        return this.sessionFactory.getCurrentSession();
     }
 
 
@@ -44,36 +44,37 @@ public abstract class GenericHibernateDaoImpl<T extends Serializable, ID extends
 
     @Override
     public void update(T entity) {
+
         try {
-//            session = HibernateUtil.getSessionFactory().openSession();
-//            session.beginTransaction();
-//            session.update(entity);
-//            session.getTransaction().commit();
+
+        getSession().update(entity);
+
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-//            if (session != null && session.isOpen()) {
-//                session.close();
-//            }
         }
     }
 
+
+    @Override
+    public void saveOrUpdate(T entity) {
+        getSession().saveOrUpdate(entity);
+
+    }
+
     /*here the variable clazz should be instantiated with the help of calling superconstructor
-     * in the overridden classes  */
+         * in the overridden classes  */
     @Override
     public void delete(ID id) {
         try {
-//            session = HibernateUtil.getSessionFactory().openSession();
-//            session.beginTransaction();
-//            T t = (T) session.get(clazz, id);
-//            session.delete(t);
-//            session.getTransaction().commit();
+
+            T t = (T) getSession().get(clazz, id);
+            getSession().delete(t);
+
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-//            if (session != null && session.isOpen()) {
-//                session.close();
-//            }
+
         }
     }
 
@@ -81,17 +82,10 @@ public abstract class GenericHibernateDaoImpl<T extends Serializable, ID extends
     public List<T> findAll() {
         List<T> list = null;
         try {
-//            session = HibernateUtil.getSessionFactory().openSession();
-//            session.beginTransaction();
-//            list = session.createCriteria(clazz).list();
-//            //  Query query = session.createQuery(hql);
-//            session.getTransaction().commit();
+            list = getSession().createCriteria(clazz).list();
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-//            if (session != null && session.isOpen()) {
-//                session.close();
-//            }
         }
         return list;
     }
@@ -100,16 +94,11 @@ public abstract class GenericHibernateDaoImpl<T extends Serializable, ID extends
     public T findById(ID id) {
         T t = null;
         try {
-//            session = HibernateUtil.getSessionFactory().getCurrentSession();
-//            session.beginTransaction();
-//            t = (T) session.get(clazz, id);
-//            session.getTransaction().commit();
+            t = (T) getSession().get(clazz, id);
+            getSession().evict(t);
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-//            if (session != null && session.isOpen()) {
-//                session.close();
-//            }
         }
 
         return t;

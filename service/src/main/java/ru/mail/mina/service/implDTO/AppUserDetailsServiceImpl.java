@@ -31,7 +31,6 @@ public class AppUserDetailsServiceImpl implements UserDetailsService {
     public UserDetails loadUserByUsername(String username) {
         System.out.println(username);
         User user = userDao.getByUserName(username);
-
         if (user == null) {
             System.out.println("no user, can save it");
             return null;

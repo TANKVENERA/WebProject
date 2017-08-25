@@ -1,6 +1,6 @@
 package ru.mail.mina.service.modelDTO;
 
-import ru.mail.mina.repository.model.CarPhotos;
+import ru.mail.mina.repository.model.FileEntity;
 import ru.mail.mina.repository.model.Comment;
 import ru.mail.mina.repository.model.User;
 
@@ -42,7 +42,7 @@ public class AdDTO {
 
     private Set<Comment> comments = new HashSet<>();
 
-    private List<CarPhotos> carPhotos = new LinkedList<>();
+    private List<FileEntity> carPhotos = new LinkedList<>();
 
     public Integer getId() {
         return id;
@@ -156,11 +156,11 @@ public class AdDTO {
         this.comments = comments;
     }
 
-    public List<CarPhotos> getCarPhotos() {
+    public List<FileEntity> getCarPhotos() {
         return carPhotos;
     }
 
-    public void setCarPhotos(List<CarPhotos> carPhotos) {
+    public void setCarPhotos(List<FileEntity> carPhotos) {
         this.carPhotos = carPhotos;
     }
 }

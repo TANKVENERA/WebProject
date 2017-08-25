@@ -12,6 +12,8 @@ public interface GenericHibernateDao<T extends Serializable, ID extends Serializ
 
     void update(T entity);
 
+    void saveOrUpdate(T entity);
+
     void delete( ID id);
 
     List<T> findAll();

@@ -20,9 +20,9 @@ public class AppUserPrincipal implements UserDetails {
 
     public AppUserPrincipal(User user) {
         this.user = user;
-//        grantedAuthorities = Collections.singletonList(
-//                new SimpleGrantedAuthority(user.getRole().name())
-//        );
+        grantedAuthorities = Collections.singletonList(
+                new SimpleGrantedAuthority(user.getRole().name())
+        );
     }
 
     public Integer getUserId() {

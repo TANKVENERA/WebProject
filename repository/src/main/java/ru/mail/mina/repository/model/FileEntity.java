@@ -12,8 +12,8 @@ import static javax.persistence.GenerationType.IDENTITY;
  * Created by Администратор on 05.08.2017.
  */
 @Entity
-@Table(name = "t_CarPhotos")
-public class CarPhotos implements Serializable {
+@Table(name = "t_FileEntity")
+public class FileEntity implements Serializable {
 
     private static final long serialVersionUID = -5700950605416486180L;
 
@@ -24,7 +24,10 @@ public class CarPhotos implements Serializable {
     @Column(name = "F_FilePath")
     private String filePath;
 
-    public CarPhotos() {
+    @Column(name = "F_FileName")
+    private String fileName;
+
+    public FileEntity() {
     }
 
     public Integer getId() {
@@ -43,17 +46,26 @@ public class CarPhotos implements Serializable {
         this.filePath = filePath;
     }
 
+    public String getFileName() {
+        return fileName;
+    }
+
+    public void setFileName(String fileName) {
+        this.fileName = fileName;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        CarPhotos carPhotos = (CarPhotos) o;
-        return Objects.equals(id, carPhotos.id) &&
-                Objects.equals(filePath, carPhotos.filePath);
+        FileEntity that = (FileEntity) o;
+        return Objects.equals(id, that.id) &&
+                Objects.equals(filePath, that.filePath) &&
+                Objects.equals(fileName, that.fileName);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, filePath);
+        return Objects.hash(id, filePath, fileName);
     }
 }

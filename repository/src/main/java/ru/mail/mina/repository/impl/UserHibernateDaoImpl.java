@@ -27,12 +27,11 @@ public class UserHibernateDaoImpl extends GenericHibernateDaoImpl<User, Integer>
     }
 
 
-
     @Override
+    @Transactional
     public User getUserByAd(Integer adId) {
         User user = null;
         try {
-        //    session = HibernateUtil.getSessionFactory().openSession();
             getSession().beginTransaction();
             String hql = "SELECT ad.user  from Ad ad WHERE ad.id=:adId ";
             Query query =  getSession().createQuery(hql);
@@ -44,7 +43,6 @@ public class UserHibernateDaoImpl extends GenericHibernateDaoImpl<User, Integer>
             if ( getSession() != null &&  getSession().isOpen()) {
             }
         }
-
         return user;
     }
 

@@ -1,19 +1,12 @@
 package ru.mail.mina.web;
 
-import ru.mail.mina.repository.impl.CarPhotosGenericHibernateDaoImpl;
-import ru.mail.mina.repository.model.CarPhotos;
-
 import javax.imageio.ImageIO;
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.awt.image.BufferedImage;
 import java.io.*;
-import java.nio.file.Files;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by Администратор on 06.08.2017.

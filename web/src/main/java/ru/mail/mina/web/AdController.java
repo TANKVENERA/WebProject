@@ -10,6 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 import ru.mail.mina.repository.model.Ad;
 import ru.mail.mina.service.dto.AdService;
 import ru.mail.mina.service.implDTO.AdServiceImpl;
+import ru.mail.mina.service.modelDTO.AdDTO;
 import ru.mail.mina.service.modelDTO.UserDTO;
 
 import javax.servlet.http.HttpServletRequest;
@@ -37,13 +38,14 @@ public class AdController {
         String yearTo = request.getParameter("YearOfIssueTo");
         String priceFrom = request.getParameter("PriceFrom");
         String priceTo = request.getParameter("PriceTo");
-//        System.out.println(model);
-//        System.out.println(mark);
-//        System.out.println(yearFrom);
-//        System.out.println(yearTo);
-//        System.out.println(priceFrom);
-//        System.out.println(priceTo);
-       List<Ad> listAds = adService.filterAd(model1, mark, yearFrom, yearTo, priceFrom, priceTo);
+        List<AdDTO> listAds = adService.filterAd(model1, mark, yearFrom, yearTo, priceFrom, priceTo);
+        return new ModelAndView("selectAds", "listAds", listAds);
+    }
+
+    @RequestMapping(value = "/getAllAds", method = RequestMethod.GET)
+    public ModelAndView getAllAds(Model model) {
+        model.addAttribute("user", new UserDTO());
+        List<AdDTO> listAds = adService.findAll();
         return new ModelAndView("selectAds", "listAds", listAds);
     }
 }

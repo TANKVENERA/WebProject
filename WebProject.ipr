@@ -46,9 +46,9 @@
             <element id="library" level="project" name="Maven: org.hibernate.common:hibernate-commons-annotations:5.0.1.Final" />
             <element id="library" level="project" name="Maven: org.hibernate:hibernate-validator:5.4.0.Final" />
             <element id="library" level="project" name="Maven: javax.validation:validation-api:1.1.0.Final" />
-            <element id="library" level="project" name="Maven: org.slf4j:slf4j-log4j12:1.7.25" />
-            <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.25" />
             <element id="library" level="project" name="Maven: log4j:log4j:1.2.17" />
+            <element id="library" level="project" name="Maven: org.slf4j:slf4j-log4j12:1.7.25" />
+            <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.5" />
             <element id="library" level="project" name="Maven: jstl:jstl:1.2" />
           </element>
         </element>
@@ -557,15 +557,15 @@
         <root url="jar://$MAVEN_REPOSITORY$/org/jboss/jandex/2.0.3.Final/jandex-2.0.3.Final-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: org.slf4j:slf4j-api:1.7.25">
+    <library name="Maven: org.slf4j:slf4j-api:1.7.5">
       <CLASSES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar!/" />
       </CLASSES>
       <JAVADOC>
-        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25-javadoc.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5-javadoc.jar!/" />
       </JAVADOC>
       <SOURCES>
-        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25-sources.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.slf4j:slf4j-log4j12:1.7.25">

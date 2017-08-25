@@ -15,7 +15,6 @@ public class StartPageController {
     @RequestMapping( value = {"/", "login"}, method = RequestMethod.GET)
     public String showStartPage(Model model) {
     model.addAttribute("user", new UserDTO());
-        System.out.println("hi");
         return "autosale";
     }
 }

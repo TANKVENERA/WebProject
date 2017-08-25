@@ -21,7 +21,7 @@ import java.util.Properties;
 
 @Configuration
 @EnableTransactionManagement // (annotation-driven)
-@PropertySource( value = {"classpath:properties/hibernate.properties"})
+@PropertySource( value = {"classpath:properties/hibernate.properties", "classpath:properties/app.properties"})
 public class HibernateConfig {
 
     @Autowired
@@ -50,8 +50,9 @@ public class HibernateConfig {
         Properties properties = new Properties();
         properties.setProperty("hibernate.dialect", environment.getProperty("hibernate.dialect"));
         properties.setProperty("hibernate.show_sql", environment.getProperty("hibernate.show_sql"));
+        properties.setProperty("hibernate.enable_lazy_load_no_trans", environment.getProperty("hibernate.enable_lazy_load_no_trans"));
         properties.setProperty("hibernate.hbm2ddl.auto", environment.getProperty("hibernate.hbm2ddl.auto"));
-          properties.setProperty("hibernate.current_session_context_class", "thread");
+//          properties.setProperty("hibernate.current_session_context_class", "thread");
         return properties;
     }
 

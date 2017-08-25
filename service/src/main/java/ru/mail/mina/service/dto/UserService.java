@@ -12,6 +12,10 @@ public interface UserService {
 
     Integer saveUser (UserDTO userDTO);
 
-    UserDTO GetByUserName(String username);
+    UserDTO getByUserName(String username);
+
+    void update (UserDTO userDTO);
+
+    void saveOrUpdate(UserDTO userDTO);
 
 }

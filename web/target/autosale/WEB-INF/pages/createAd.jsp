@@ -88,5 +88,5 @@ color: #fff; font-weight: 700; margin-left: 40%; width: 30%"/>
 </div>
 <script src="resources/script/uploadbutton.js"></script>
 <script src="resources/script/imgpreview.js"></script>
-<!-- size="1" position="absolute" onclick="size=(size!=1)?1:5;" -->
+
 

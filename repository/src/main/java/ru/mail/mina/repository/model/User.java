@@ -1,6 +1,8 @@
 package ru.mail.mina.repository.model;
 
 
+import org.hibernate.annotations.Cascade;
+
 import javax.persistence.*;
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;

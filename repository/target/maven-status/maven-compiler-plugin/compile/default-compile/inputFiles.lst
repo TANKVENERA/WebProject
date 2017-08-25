@@ -1,7 +1,7 @@
+D:\WebProject\repository\src\main\java\ru\mail\mina\repository\dao\FileEntityGenericHibernateDao.java
 D:\WebProject\repository\src\main\java\ru\mail\mina\repository\model\Ad.java
 D:\WebProject\repository\src\main\java\ru\mail\mina\repository\impl\UserHibernateDaoImpl.java
 D:\WebProject\repository\src\main\java\ru\mail\mina\repository\model\Comment.java
-D:\WebProject\repository\src\main\java\ru\mail\mina\repository\Runner.java
 D:\WebProject\repository\src\main\java\ru\mail\mina\repository\dao\CommentGenericHibernateDao.java
 D:\WebProject\repository\src\main\java\ru\mail\mina\repository\impl\MessageGenericHibernateDaoImpl.java
 D:\WebProject\repository\src\main\java\ru\mail\mina\repository\impl\ServerMessageHibernateDaoImpl.java
@@ -9,16 +9,17 @@ D:\WebProject\repository\src\main\java\ru\mail\mina\repository\dao\AdGenericHibe
 D:\WebProject\repository\src\main\java\ru\mail\mina\repository\model\Basket.java
 D:\WebProject\repository\src\main\java\ru\mail\mina\repository\dao\GenericHibernateDao.java
 D:\WebProject\repository\src\main\java\ru\mail\mina\repository\dao\NewsGenericHibernateDao.java
+D:\WebProject\repository\src\main\java\ru\mail\mina\repository\model\FileEntity.java
 D:\WebProject\repository\src\main\java\ru\mail\mina\repository\dao\BasketGenericHibernateDao.java
 D:\WebProject\repository\src\main\java\ru\mail\mina\repository\dao\MessageGenericHibernateDao.java
 D:\WebProject\repository\src\main\java\ru\mail\mina\repository\model\Message.java
 D:\WebProject\repository\src\main\java\ru\mail\mina\repository\impl\NewsGenericHibernateDaoImpl.java
-D:\WebProject\repository\src\main\java\ru\mail\mina\repository\model\CarPhotos.java
 D:\WebProject\repository\src\main\java\ru\mail\mina\repository\impl\AdGenericHibernateDaoImpl.java
 D:\WebProject\repository\src\main\java\ru\mail\mina\repository\impl\GenericHibernateDaoImpl.java
 D:\WebProject\repository\src\main\java\ru\mail\mina\repository\model\News.java
 D:\WebProject\repository\src\main\java\ru\mail\mina\repository\dao\UserGenericHibernateDao.java
 D:\WebProject\repository\src\main\java\ru\mail\mina\repository\impl\BasketGenericHibernateDaoImpl.java
+D:\WebProject\repository\src\main\java\ru\mail\mina\repository\impl\FileEntityGenericHibernateDaoImpl.java
 D:\WebProject\repository\src\main\java\ru\mail\mina\repository\dao\CarPhotosGenericHibernateDao.java
 D:\WebProject\repository\src\main\java\ru\mail\mina\repository\model\Role.java
 D:\WebProject\repository\src\main\java\ru\mail\mina\repository\impl\CommentGenericHibernateDaoImpl.java

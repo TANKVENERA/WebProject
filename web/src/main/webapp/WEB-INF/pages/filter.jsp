@@ -174,7 +174,7 @@
 </div>
 
 <div class="modal_container" id="register" style="opacity: 0.9; pointer-events: auto;">
-    <div class="Mymodal" style="top: -605px; left: 5px; height: 470px">
+    <div class="Mymodal" style="top: -605px; left: 5px; height: 550px">
         <a href="${pageContext.request.contextPath}/close" class="close">X</a>
         <span class="modal_head">
                   REGISTRATION

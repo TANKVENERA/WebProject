@@ -5,7 +5,7 @@
     <div class="buttons" style="padding-top: 100px; display: inline-block; background-color: cornsilk; border-top-left-radius: 15px;
 border-bottom-left-radius:15px;">
     <div>
-        <a href="#" class="swagBtn" style="width: 200px" >Мои объявления</a>
+        <a href="${pageContext.request.contextPath}/createAd" class="swagBtn" style="width: 200px" >Мои объявления</a>
     </div>
     <div>
         <a href="#" class="swagBtn">Закладки</a>

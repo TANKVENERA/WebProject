@@ -18,19 +18,12 @@ import java.util.List;
  */
 @Repository
 public class AdGenericHibernateDaoImpl extends GenericHibernateDaoImpl<Ad, Integer> implements AdGenericHibernateDao {
-//    private Session session;
-    private static AdGenericHibernateDaoImpl adGenericHibernateDaoImpl = null;
+
 
     public AdGenericHibernateDaoImpl() {
         super(Ad.class);
     }
 
-    public static AdGenericHibernateDaoImpl getInstance() {
-        if (adGenericHibernateDaoImpl == null) {
-            adGenericHibernateDaoImpl = new AdGenericHibernateDaoImpl();
-        }
-        return adGenericHibernateDaoImpl;
-    }
 
     public List<Ad> filter(String model, String mark, String yearFrom, String yearTo, String priceFrom,
                            String priceTo) {

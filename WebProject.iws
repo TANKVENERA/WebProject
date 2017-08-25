@@ -2,99 +2,130 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20ab75b8-557e-49a4-8254-8811a4232010" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/implDTO/UserServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/pages/filter.jsp" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/repository/src/main/resources/properties/hibernate.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/repository/src/main/resources/properties/log4j.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/repository/target/classes/properties/hibernate.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/repository/target/classes/properties/log4j.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/implDTO/UserServicempl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/service/target/classes/ru/mail/mina/service/implDTO/UserServicempl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/main/java/ru/mail/mina/web/AutoSaleServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/src/main/java/ru/mail/mina/web/CreateFormServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/autosale/WEB-INF/classes/ru/mail/mina/web/AutoSaleServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/autosale/WEB-INF/classes/ru/mail/mina/web/CreateFormServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/autosale/WEB-INF/lib/hibernate-commons-annotations-4.0.5.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/autosale/WEB-INF/lib/hibernate-core-4.3.11.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/autosale/WEB-INF/lib/jandex-1.1.0.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/autosale/WEB-INF/lib/javassist-3.18.1-GA.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/autosale/WEB-INF/lib/jboss-logging-3.1.3.GA.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/autosale/WEB-INF/lib/jboss-logging-annotations-1.2.0.Beta1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/autosale/WEB-INF/lib/jboss-transaction-api_1.2_spec-1.0.0.Final.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/autosale/WEB-INF/lib/slf4j-api-1.7.5.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/autosale/WEB-INF/lib/xml-apis-1.0.b2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/classes/ru/mail/mina/web/AutoSaleServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/classes/ru/mail/mina/web/CreateFormServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/tomcat/logs/access_log.2017-08-17" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/pages/administrator.jsp" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/Runner.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/repository/target/classes/ru/mail/mina/repository/Runner.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/repository/target/classes/ru/mail/mina/repository/model/CarPhotos.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/autosale/WEB-INF/classes/properties/log4j.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/autosale/WEB-INF/lib/slf4j-api-1.7.25.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/classes/properties/log4j.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/tomcat/logs/access_log.2017-08-18" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/tomcat/logs/access_log.2017-08-19" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/tomcat/work/Tomcat/localhost/autosale/org/apache/jsp/WEB_002dINF/pages/filter_jsp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/tomcat/work/Tomcat/localhost/autosale/org/apache/jsp/WEB_002dINF/pages/filter_jsp.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/tomcat/work/Tomcat/localhost/autosale/org/apache/jsp/WEB_002dINF/pages/profile_jsp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/tomcat/work/Tomcat/localhost/autosale/org/apache/jsp/WEB_002dINF/pages/profile_jsp.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/tomcat/work/Tomcat/localhost/autosale/org/apache/jsp/WEB_002dINF/pages/selectAds_jsp.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/target/tomcat/work/Tomcat/localhost/autosale/org/apache/jsp/WEB_002dINF/pages/selectAds_jsp.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/repository/target/WebProject.jar" afterPath="$PROJECT_DIR$/repository/target/WebProject.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/repository/target/classes/ru/mail/mina/repository/Runner.class" afterPath="$PROJECT_DIR$/repository/target/classes/ru/mail/mina/repository/Runner.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/repository/target/classes/ru/mail/mina/repository/dao/CarPhotosGenericHibernateDao.class" afterPath="$PROJECT_DIR$/repository/target/classes/ru/mail/mina/repository/dao/CarPhotosGenericHibernateDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/repository/target/classes/ru/mail/mina/repository/dao/GenericHibernateDao.class" afterPath="$PROJECT_DIR$/repository/target/classes/ru/mail/mina/repository/dao/GenericHibernateDao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/repository/target/classes/ru/mail/mina/repository/impl/AdGenericHibernateDaoImpl.class" afterPath="$PROJECT_DIR$/repository/target/classes/ru/mail/mina/repository/impl/AdGenericHibernateDaoImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/repository/target/classes/ru/mail/mina/repository/impl/CarPhotosGenericHibernateDaoImpl.class" afterPath="$PROJECT_DIR$/repository/target/classes/ru/mail/mina/repository/impl/CarPhotosGenericHibernateDaoImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/repository/target/classes/ru/mail/mina/repository/impl/GenericHibernateDaoImpl.class" afterPath="$PROJECT_DIR$/repository/target/classes/ru/mail/mina/repository/impl/GenericHibernateDaoImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/repository/target/classes/ru/mail/mina/repository/impl/NewsGenericHibernateDaoImpl.class" afterPath="$PROJECT_DIR$/repository/target/classes/ru/mail/mina/repository/impl/NewsGenericHibernateDaoImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/repository/target/classes/ru/mail/mina/repository/impl/UserHibernateDaoImpl.class" afterPath="$PROJECT_DIR$/repository/target/classes/ru/mail/mina/repository/impl/UserHibernateDaoImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/repository/target/classes/ru/mail/mina/repository/model/Ad.class" afterPath="$PROJECT_DIR$/repository/target/classes/ru/mail/mina/repository/model/Ad.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/repository/target/classes/ru/mail/mina/repository/model/News.class" afterPath="$PROJECT_DIR$/repository/target/classes/ru/mail/mina/repository/model/News.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/repository/target/classes/ru/mail/mina/repository/model/Role.class" afterPath="$PROJECT_DIR$/repository/target/classes/ru/mail/mina/repository/model/Role.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/repository/target/classes/ru/mail/mina/repository/model/User.class" afterPath="$PROJECT_DIR$/repository/target/classes/ru/mail/mina/repository/model/User.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/target/WebProject.jar" afterPath="$PROJECT_DIR$/service/target/WebProject.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/target/classes/ru/mail/mina/service/dto/AdService.class" afterPath="$PROJECT_DIR$/service/target/classes/ru/mail/mina/service/dto/AdService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/target/classes/ru/mail/mina/service/dto/UserService.class" afterPath="$PROJECT_DIR$/service/target/classes/ru/mail/mina/service/dto/UserService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/target/classes/ru/mail/mina/service/implDTO/AdServiceImpl.class" afterPath="$PROJECT_DIR$/service/target/classes/ru/mail/mina/service/implDTO/AdServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/target/classes/ru/mail/mina/service/modelDTO/UserDTO.class" afterPath="$PROJECT_DIR$/service/target/classes/ru/mail/mina/service/modelDTO/UserDTO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/target/classes/ru/mail/mina/service/implDTO/AppUserDetailsServiceImpl.class" afterPath="$PROJECT_DIR$/service/target/classes/ru/mail/mina/service/implDTO/AppUserDetailsServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/target/classes/ru/mail/mina/service/implDTO/UserServiceImpl.class" afterPath="$PROJECT_DIR$/service/target/classes/ru/mail/mina/service/implDTO/UserServiceImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/target/classes/ru/mail/mina/service/modelDTO/AdDTO.class" afterPath="$PROJECT_DIR$/service/target/classes/ru/mail/mina/service/modelDTO/AdDTO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/target/classes/ru/mail/mina/service/modelDTO/AppUserPrincipal.class" afterPath="$PROJECT_DIR$/service/target/classes/ru/mail/mina/service/modelDTO/AppUserPrincipal.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/target/classes/ru/mail/mina/service/modelDTO/NewsDTO.class" afterPath="$PROJECT_DIR$/service/target/classes/ru/mail/mina/service/modelDTO/NewsDTO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/target/classes/ru/mail/mina/service/util/AdConverter.class" afterPath="$PROJECT_DIR$/service/target/classes/ru/mail/mina/service/util/AdConverter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/target/classes/ru/mail/mina/service/util/UserConverter.class" afterPath="$PROJECT_DIR$/service/target/classes/ru/mail/mina/service/util/UserConverter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/autosale.war" afterPath="$PROJECT_DIR$/web/target/autosale.war" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/autosale/WEB-INF/classes/ru/mail/mina/web/AdController.class" afterPath="$PROJECT_DIR$/web/target/autosale/WEB-INF/classes/ru/mail/mina/web/AdController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/autosale/WEB-INF/classes/ru/mail/mina/web/ImagesServlet.class" afterPath="$PROJECT_DIR$/web/target/autosale/WEB-INF/classes/ru/mail/mina/web/ImagesServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/autosale/WEB-INF/classes/ru/mail/mina/web/StartPageController.class" afterPath="$PROJECT_DIR$/web/target/autosale/WEB-INF/classes/ru/mail/mina/web/StartPageController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/autosale/WEB-INF/classes/ru/mail/mina/web/UserController.class" afterPath="$PROJECT_DIR$/web/target/autosale/WEB-INF/classes/ru/mail/mina/web/UserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/autosale/WEB-INF/classes/ru/mail/mina/web/config/AppConfig.class" afterPath="$PROJECT_DIR$/web/target/autosale/WEB-INF/classes/ru/mail/mina/web/config/AppConfig.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/autosale/WEB-INF/classes/ru/mail/mina/web/config/HibernateConfig.class" afterPath="$PROJECT_DIR$/web/target/autosale/WEB-INF/classes/ru/mail/mina/web/config/HibernateConfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/autosale/WEB-INF/classes/ru/mail/mina/web/config/SecurityConfig.class" afterPath="$PROJECT_DIR$/web/target/autosale/WEB-INF/classes/ru/mail/mina/web/config/SecurityConfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/autosale/WEB-INF/classes/ru/mail/mina/web/initializer/ApplicationInitializer.class" afterPath="$PROJECT_DIR$/web/target/autosale/WEB-INF/classes/ru/mail/mina/web/initializer/ApplicationInitializer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/autosale/WEB-INF/classes/ru/mail/mina/web/validator/UserValidator.class" afterPath="$PROJECT_DIR$/web/target/autosale/WEB-INF/classes/ru/mail/mina/web/validator/UserValidator.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/autosale/WEB-INF/lib/repository-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/web/target/autosale/WEB-INF/lib/repository-1.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/autosale/WEB-INF/lib/service-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/web/target/autosale/WEB-INF/lib/service-1.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/classes/ru/mail/mina/web/AdController.class" afterPath="$PROJECT_DIR$/web/target/classes/ru/mail/mina/web/AdController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/classes/ru/mail/mina/web/ImagesServlet.class" afterPath="$PROJECT_DIR$/web/target/classes/ru/mail/mina/web/ImagesServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/classes/ru/mail/mina/web/StartPageController.class" afterPath="$PROJECT_DIR$/web/target/classes/ru/mail/mina/web/StartPageController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/classes/ru/mail/mina/web/UserController.class" afterPath="$PROJECT_DIR$/web/target/classes/ru/mail/mina/web/UserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/classes/ru/mail/mina/web/config/AppConfig.class" afterPath="$PROJECT_DIR$/web/target/classes/ru/mail/mina/web/config/AppConfig.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/classes/ru/mail/mina/web/config/HibernateConfig.class" afterPath="$PROJECT_DIR$/web/target/classes/ru/mail/mina/web/config/HibernateConfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/classes/ru/mail/mina/web/config/SecurityConfig.class" afterPath="$PROJECT_DIR$/web/target/classes/ru/mail/mina/web/config/SecurityConfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/classes/ru/mail/mina/web/initializer/ApplicationInitializer.class" afterPath="$PROJECT_DIR$/web/target/classes/ru/mail/mina/web/initializer/ApplicationInitializer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/tomcat/work/Tomcat/localhost/autosale/org/apache/jsp/WEB_002dINF/pages/autosale_jsp.class" afterPath="$PROJECT_DIR$/web/target/tomcat/work/Tomcat/localhost/autosale/org/apache/jsp/WEB_002dINF/pages/autosale_jsp.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.ideaDataSources/9d7b67e2-8072-4e9d-89cd-277ec5d9b9cf.xml" afterPath="$PROJECT_DIR$/.ideaDataSources/9d7b67e2-8072-4e9d-89cd-277ec5d9b9cf.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebProject.iml" afterPath="$PROJECT_DIR$/WebProject.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebProject.ipr" afterPath="$PROJECT_DIR$/WebProject.ipr" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebProject.iws" afterPath="$PROJECT_DIR$/WebProject.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/repository/repository.iml" afterPath="$PROJECT_DIR$/repository/repository.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/Runner.java" afterPath="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/Runner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/dao/UserGenericHibernateDao.java" afterPath="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/dao/UserGenericHibernateDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/dao/AdGenericHibernateDao.java" afterPath="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/dao/AdGenericHibernateDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/dao/CarPhotosGenericHibernateDao.java" afterPath="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/dao/CarPhotosGenericHibernateDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/dao/GenericHibernateDao.java" afterPath="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/dao/GenericHibernateDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/impl/AdGenericHibernateDaoImpl.java" afterPath="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/impl/AdGenericHibernateDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/impl/CarPhotosGenericHibernateDaoImpl.java" afterPath="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/impl/CarPhotosGenericHibernateDaoImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/impl/GenericHibernateDaoImpl.java" afterPath="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/impl/GenericHibernateDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/impl/NewsGenericHibernateDaoImpl.java" afterPath="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/impl/NewsGenericHibernateDaoImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/impl/UserHibernateDaoImpl.java" afterPath="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/impl/UserHibernateDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/model/Ad.java" afterPath="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/model/Ad.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/model/News.java" afterPath="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/model/News.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/model/Role.java" afterPath="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/model/Role.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/model/User.java" afterPath="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/model/User.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/repository/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/repository/target/maven-archiver/pom.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/repository/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/repository/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/repository/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/repository/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/repository/target/surefire-reports/TEST-ru.mail.mina.repository.AppTest.xml" afterPath="$PROJECT_DIR$/repository/target/surefire-reports/TEST-ru.mail.mina.repository.AppTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/repository/target/surefire-reports/ru.mail.mina.repository.AppTest.txt" afterPath="$PROJECT_DIR$/repository/target/surefire-reports/ru.mail.mina.repository.AppTest.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/service.iml" afterPath="$PROJECT_DIR$/service/service.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/dto/AdService.java" afterPath="$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/dto/AdService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/dto/UserService.java" afterPath="$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/dto/UserService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/implDTO/AdServiceImpl.java" afterPath="$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/implDTO/AdServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/implDTO/AppUserDetailsServiceImpl.java" afterPath="$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/implDTO/AppUserDetailsServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/implDTO/UserServiceImpl.java" afterPath="$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/implDTO/UserServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/modelDTO/AdDTO.java" afterPath="$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/modelDTO/AdDTO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/modelDTO/AppUserPrincipal.java" afterPath="$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/modelDTO/AppUserPrincipal.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/modelDTO/UserDTO.java" afterPath="$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/modelDTO/UserDTO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/modelDTO/NewsDTO.java" afterPath="$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/modelDTO/NewsDTO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/util/AdConverter.java" afterPath="$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/util/AdConverter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/util/UserConverter.java" afterPath="$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/util/UserConverter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/service/target/maven-archiver/pom.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/target/surefire-reports/TEST-ru.mail.mina.service.AppTest.xml" afterPath="$PROJECT_DIR$/service/target/surefire-reports/TEST-ru.mail.mina.service.AppTest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/service/target/surefire-reports/ru.mail.mina.service.AppTest.txt" afterPath="$PROJECT_DIR$/service/target/surefire-reports/ru.mail.mina.service.AppTest.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/java/ru/mail/mina/web/AdController.java" afterPath="$PROJECT_DIR$/web/src/main/java/ru/mail/mina/web/AdController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/java/ru/mail/mina/web/ImagesServlet.java" afterPath="$PROJECT_DIR$/web/src/main/java/ru/mail/mina/web/ImagesServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/java/ru/mail/mina/web/StartPageController.java" afterPath="$PROJECT_DIR$/web/src/main/java/ru/mail/mina/web/StartPageController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/java/ru/mail/mina/web/UserController.java" afterPath="$PROJECT_DIR$/web/src/main/java/ru/mail/mina/web/UserController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/java/ru/mail/mina/web/config/AppConfig.java" afterPath="$PROJECT_DIR$/web/src/main/java/ru/mail/mina/web/config/AppConfig.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/java/ru/mail/mina/web/config/HibernateConfig.java" afterPath="$PROJECT_DIR$/web/src/main/java/ru/mail/mina/web/config/HibernateConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/java/ru/mail/mina/web/initializer/SecurityWebApplicationInitializer.java" afterPath="$PROJECT_DIR$/web/src/main/java/ru/mail/mina/web/initializer/SecurityWebApplicationInitializer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/java/ru/mail/mina/web/config/SecurityConfig.java" afterPath="$PROJECT_DIR$/web/src/main/java/ru/mail/mina/web/config/SecurityConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/java/ru/mail/mina/web/initializer/ApplicationInitializer.java" afterPath="$PROJECT_DIR$/web/src/main/java/ru/mail/mina/web/initializer/ApplicationInitializer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/resources/properties/hibernate.properties" afterPath="$PROJECT_DIR$/web/src/main/resources/properties/hibernate.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/pages/autosale.jsp" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/pages/autosale.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/pages/begin-html.jsp" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/pages/begin-html.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/pages/createAd.jsp" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/pages/createAd.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/pages/filter.jsp" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/pages/filter.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/pages/profile.jsp" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/pages/profile.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/pages/selectAds.jsp" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/pages/selectAds.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/webapp/resources/css/main.css" afterPath="$PROJECT_DIR$/web/src/main/webapp/resources/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/autosale/WEB-INF/pages/autosale.jsp" afterPath="$PROJECT_DIR$/web/target/autosale/WEB-INF/pages/autosale.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/src/main/webapp/resources/script/imgpreview.js" afterPath="$PROJECT_DIR$/web/src/main/webapp/resources/script/imgpreview.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/autosale/WEB-INF/classes/properties/hibernate.properties" afterPath="$PROJECT_DIR$/web/target/autosale/WEB-INF/classes/properties/hibernate.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/autosale/WEB-INF/pages/begin-html.jsp" afterPath="$PROJECT_DIR$/web/target/autosale/WEB-INF/pages/begin-html.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/autosale/WEB-INF/pages/createAd.jsp" afterPath="$PROJECT_DIR$/web/target/autosale/WEB-INF/pages/createAd.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/autosale/WEB-INF/pages/filter.jsp" afterPath="$PROJECT_DIR$/web/target/autosale/WEB-INF/pages/filter.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/autosale/WEB-INF/pages/profile.jsp" afterPath="$PROJECT_DIR$/web/target/autosale/WEB-INF/pages/profile.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/autosale/WEB-INF/pages/selectAds.jsp" afterPath="$PROJECT_DIR$/web/target/autosale/WEB-INF/pages/selectAds.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/autosale/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/target/autosale/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/autosale/resources/css/main.css" afterPath="$PROJECT_DIR$/web/target/autosale/resources/css/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/classes/properties/hibernate.properties" afterPath="$PROJECT_DIR$/web/target/classes/properties/hibernate.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/web/target/maven-archiver/pom.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/target/tomcat/work/Tomcat/localhost/autosale/org/apache/jsp/WEB_002dINF/pages/autosale_jsp.java" afterPath="$PROJECT_DIR$/web/target/tomcat/work/Tomcat/localhost/autosale/org/apache/jsp/WEB_002dINF/pages/autosale_jsp.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/web.iml" afterPath="$PROJECT_DIR$/web/web.iml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/model/CarPhotos.java" afterPath="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/model/FileEntity.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/src/main/resources/properties/log4j.properties" afterPath="$PROJECT_DIR$/web/src/main/resources/log4j.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/repository/target/" />
@@ -210,7 +241,21 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
-        <option name="myItemId" value="t_user" />
+        <option name="myItemId" value="t_news" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="webproject@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="t_fileentity" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
@@ -302,104 +347,69 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/java/ru/mail/mina/web/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-290">
-              <caret line="29" column="24" lean-forward="false" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+      <file leaf-file-name="webproject.t_fileentity" pinned="false" current-in-tab="true">
+        <entry file="dbDummy://dbtable:/WebProjectd5395393/9d7b67e2-8072-4e9d-89cd-277ec5d9b9cf/webproject.t_fileentity">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SecurityConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/java/ru/mail/mina/web/config/SecurityConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="6" column="10" lean-forward="false" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="autosale.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/pages/autosale.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/resources/css/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="58">
-              <caret line="446" column="26" lean-forward="true" selection-start-line="446" selection-start-column="26" selection-end-line="446" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="begin-html.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/pages/begin-html.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="79" column="34" lean-forward="true" selection-start-line="79" selection-start-column="34" selection-end-line="79" selection-end-column="34" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="filter.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/pages/filter.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="514">
-              <caret line="175" column="62" lean-forward="true" selection-start-line="175" selection-start-column="60" selection-end-line="175" selection-end-column="62" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#6;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#div#0;n#div#6;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="webproject.t_user" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/WebProjectd5395393/9d7b67e2-8072-4e9d-89cd-277ec5d9b9cf/webproject.t_user">
           <provider editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="createAd.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/pages/createAd.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="81" column="93" lean-forward="false" selection-start-line="81" selection-start-column="93" selection-end-line="81" selection-end-column="93" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NewsServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/implDTO/NewsServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-69">
+              <caret line="124" column="0" lean-forward="false" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1723#1724#0" expanded="true" />
+                <element signature="e#1773#1774#0" expanded="true" />
+                <element signature="e#4215#4216#0" expanded="true" />
+                <element signature="e#4274#4275#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/main/java/ru/mail/mina/web/AdminController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="60" column="13" lean-forward="true" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
+              <folding>
+                <marker date="1503594785205" expanded="true" signature="1654:1705" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="webproject.t_news" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/WebProjectd5395393/9d7b67e2-8072-4e9d-89cd-277ec5d9b9cf/webproject.t_news">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
               <filtering enabled="true" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserValidator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/java/ru/mail/mina/web/validator/UserValidator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="33" column="37" lean-forward="false" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -408,8 +418,50 @@
       <file leaf-file-name="messages.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/repository/src/main/resources/messages.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="3" column="55" lean-forward="false" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="initial_data.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/repository/src/main/resources/initial_data.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="2" column="54" lean-forward="false" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="administrator.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/pages/administrator.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="262">
+              <caret line="66" column="35" lean-forward="false" selection-start-line="66" selection-start-column="35" selection-end-line="66" selection-end-column="35" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="imgpreview.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/resources/script/imgpreview.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="588">
+              <caret line="28" column="24" lean-forward="false" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/main/webapp/resources/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="158">
+              <caret line="408" column="1" lean-forward="false" selection-start-line="408" selection-start-column="1" selection-end-line="408" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -420,10 +472,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -437,6 +489,9 @@
       <find>transaction</find>
       <find>vALIDA</find>
       <find>Dev</find>
+      <find>tra</find>
+      <find>adv</find>
+      <find>hidden</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -450,57 +505,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/dao/GenericHibernateDao.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/modelDTO/AdDTO.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/util/AdConverter.java" />
-        <option value="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/impl/AdGenericHibernateDaoImpl.java" />
-        <option value="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/config/AppConfig.java" />
-        <option value="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/config/initializer/SecurityWebApplicationInitializer.java" />
-        <option value="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/impl/BasketGenericHibernateDaoImpl.java" />
-        <option value="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/config/HibernateConfig.java" />
-        <option value="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/config/SecurityConfig.java" />
-        <option value="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/config/WebConfig.java" />
-        <option value="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/config/WebMVCConfig.java" />
-        <option value="$PROJECT_DIR$/web/pom.xml" />
-        <option value="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/config/initializer/ApplicationInitializer.java" />
-        <option value="$PROJECT_DIR$/repository/src/main/resources/config/hibernate-config.xml" />
-        <option value="$PROJECT_DIR$/repository/src/main/resources/config/spring-config.xml" />
-        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/spring-config.xml" />
-        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/SpringDispatcherServlet-servlet.xml" />
-        <option value="$PROJECT_DIR$/web/src/main/java/ru/mail/mina/web/initializer/ApplicationInitializer.java" />
-        <option value="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/dao/AdGenericHibernateDao.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/dto/AdService.java" />
-        <option value="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/model/Role.java" />
-        <option value="$PROJECT_DIR$/web/src/main/java/ru/mail/mina/web/initializer/SecurityWebApplicationInitializer.java" />
         <option value="$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/implDTO/AdServiceImpl.java" />
-        <option value="$PROJECT_DIR$/web/src/main/resources/properties/hibernate.properties" />
-        <option value="dbtable:/WebProjectd5395393/9d7b67e2-8072-4e9d-89cd-277ec5d9b9cf/webproject.t_user" />
-        <option value="$PROJECT_DIR$/web/src/main/java/ru/mail/mina/web/config/HibernateConfig.java" />
-        <option value="$PROJECT_DIR$/web/src/main/java/ru/mail/mina/web/config/AppConfig.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/util/UserConverter.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/dto/UserService.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/ru/mail/mina/web/AdController.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/modelDTO/UserDTO.java" />
-        <option value="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/dao/UserGenericHibernateDao.java" />
-        <option value="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/model/User.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/modelDTO/AppUserPrincipal.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/ru/mail/mina/web/StartPageController.java" />
-        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/pages/autosale.jsp" />
-        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/pages/#register.jsp" />
-        <option value="$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/implDTO/UserServicempl.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/implDTO/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/impl/UserHibernateDaoImpl.java" />
-        <option value="$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/implDTO/AppUserDetailsServiceImpl.java" />
-        <option value="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/impl/GenericHibernateDaoImpl.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/web/src/main/webapp/resources/css/main.css" />
-        <option value="$PROJECT_DIR$/repository/src/main/resources/messages.properties" />
-        <option value="$PROJECT_DIR$/web/src/main/java/ru/mail/mina/web/validator/UserValidator.java" />
-        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/pages/filter.jsp" />
-        <option value="$PROJECT_DIR$/web/src/main/java/ru/mail/mina/web/UserController.java" />
-        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/modelDTO/AppUserPrincipal.java" />
+        <option value="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/model/Role.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/ru/mail/mina/web/config/SecurityConfig.java" />
+        <option value="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/model/FileEntity.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/modelDTO/AdDTO.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/modelDTO/FileEntityDTO.java" />
+        <option value="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/impl/NewsGenericHibernateDaoImpl.java" />
+        <option value="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/dao/FileEntityGenericHibernateDao.java" />
+        <option value="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/impl/FileEntityGenericHibernateDaoImpl.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/util/UserConverter.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/dto/FileEntityService.java" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/pages/createAd.jsp" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/pages/filter.jsp" />
+        <option value="$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/implDTO/AppUserDetailsServiceImpl.java" />
         <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/pages/begin-html.jsp" />
+        <option value="$PROJECT_DIR$/web/src/main/java/ru/mail/mina/web/initializer/ApplicationInitializer.java" />
+        <option value="$PROJECT_DIR$/web/src/main/resources/properties/app.properties" />
+        <option value="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/Samp.java" />
+        <option value="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/sdffdsf.java" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/pages/selectAds.jsp" />
+        <option value="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/ffff.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/web/src/main/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/model/Ad.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/util/AdConverter.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/implDTO/FileEntityServiceImpl.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/modelDTO/NewsDTO.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/ru/mail/mina/web/config/HibernateConfig.java" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/pages/allNews.jsp" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/pages/profile.jsp" />
+        <option value="$PROJECT_DIR$/web/src/main/java/ru/mail/mina/web/UserController.java" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/resources/css/main.css" />
+        <option value="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/dao/AdGenericHibernateDao.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/dto/UserService.java" />
+        <option value="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/dao/GenericHibernateDao.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/implDTO/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/web/src/main/resources/properties/hibernate.properties" />
+        <option value="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/model/User.java" />
+        <option value="$PROJECT_DIR$/web/src/main/java/ru/mail/mina/web/AdminController.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/dto/NewsService.java" />
+        <option value="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/model/News.java" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/pages/administrator.jsp" />
+        <option value="$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/impl/GenericHibernateDaoImpl.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/util/NewsConverter.java" />
+        <option value="$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/implDTO/NewsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/repository/src/main/resources/initial_data.sql" />
+        <option value="$PROJECT_DIR$/web/src/main/webapp/resources/script/imgpreview.js" />
       </list>
     </option>
   </component>
@@ -663,6 +718,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
@@ -784,6 +840,40 @@
               <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="script" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -816,6 +906,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WebProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -888,52 +1004,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ru" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mail" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mina" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="validator" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1344,48 +1414,6 @@
               <option name="myItemId" value="repository" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WebProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="repository" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ru" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mail" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mina" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="repository" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -1485,7 +1513,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="ProjectViewSettings">
@@ -1521,41 +1548,21 @@
       <recent name="ru.mail.mina.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WebProject\repository\src\main\resources" />
       <recent name="D:\WebProject\web\src\main\resources" />
       <recent name="D:\WebProject\web\src\main\java\ru\mail\mina\web" />
       <recent name="D:\WebProject\web\src\main\webapp\WEB-INF" />
       <recent name="D:\WebProject" />
-      <recent name="D:\WebProject\repository\src\main\java\ru\mail\mina\repository" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\WebProject\web\src\main\resources" />
+      <recent name="D:\WebProject\web\src\main\resources\properties" />
       <recent name="D:\WebProject\repository\src\main\java\ru\mail\mina\repository" />
       <recent name="D:\WebProject\repository\src\main" />
       <recent name="D:\WebProject\web\src\main\webapp\WEB-INF" />
-      <recent name="D:\WebProject\repository\src\main\resources\config" />
-      <recent name="D:\WebProject\repository\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Runner">
-    <configuration default="false" name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="ru.mail.mina.service.implDTO.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="ru.mail.mina.repository.Runner" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="service" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.NewsServiceImpl">
     <configuration default="false" name="Runner (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1573,6 +1580,86 @@
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="repository" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Samp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ru.mail.mina.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="ru.mail.mina.repository.Samp" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="repository" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="sdffdsf" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ru.mail.mina.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="ru.mail.mina.repository.sdffdsf" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="repository" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="ffff" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ru.mail.mina.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="ru.mail.mina.repository.ffff" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="repository" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="NewsServiceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="ru.mail.mina.service.implDTO.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="ru.mail.mina.service.implDTO.NewsServiceImpl" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="service" />
       <envs />
       <method />
     </configuration>
@@ -1960,15 +2047,20 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <list size="2">
-      <item index="0" class="java.lang.String" itemvalue="Application.Runner" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Runner (1)" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Application.Runner (1)" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Samp" />
+      <item index="2" class="java.lang.String" itemvalue="Application.sdffdsf" />
+      <item index="3" class="java.lang.String" itemvalue="Application.ffff" />
+      <item index="4" class="java.lang.String" itemvalue="Application.NewsServiceImpl" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Application.Runner (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Runner" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Runner" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Application.NewsServiceImpl" />
+        <item index="1" class="java.lang.String" itemvalue="Application.ffff" />
+        <item index="2" class="java.lang.String" itemvalue="Application.sdffdsf" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Samp" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Runner (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -2061,14 +2153,21 @@
       <workItem from="1503070605371" duration="9192000" />
       <workItem from="1503079854087" duration="2360000" />
       <workItem from="1503085428660" duration="13729000" />
-      <workItem from="1503122933866" duration="9154000" />
+      <workItem from="1503122933866" duration="11047000" />
+      <workItem from="1503156455978" duration="22401000" />
+      <workItem from="1503218812027" duration="42017000" />
+      <workItem from="1503266466264" duration="6685000" />
+      <workItem from="1503305099669" duration="29633000" />
+      <workItem from="1503394077197" duration="32286000" />
+      <workItem from="1503486339192" duration="36570000" />
+      <workItem from="1503566242684" duration="40022000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="753833000" />
+    <option name="totallyTimeSpent" value="965340000" />
   </component>
-  <component name="TodoView">
+  <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -2079,46 +2178,46 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3139535" sideWeight="0.3901515" order="12" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39202657" sideWeight="0.23484848" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.03409091" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16363636" sideWeight="0.4903047" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22272727" sideWeight="0.4764151" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19469696" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44719473" sideWeight="0.72424245" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32838285" sideWeight="0.4969697" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32724252" sideWeight="0.4878788" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32724252" sideWeight="0.37272727" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32724252" sideWeight="0.36818182" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3349835" sideWeight="0.8098485" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33222592" sideWeight="0.48181817" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3139535" sideWeight="0.6098485" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34219268" sideWeight="0.8007576" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.4939394" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33222592" sideWeight="0.47575757" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26079735" sideWeight="0.7651515" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.04090909" sideWeight="0.47916666" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15946844" sideWeight="0.6484848" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.07651515" sideWeight="0.47916666" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26742426" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14469697" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26060605" sideWeight="0.5208333" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16287878" sideWeight="0.5235849" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="CVS" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.4969697" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890365" sideWeight="0.4969697" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.058333334" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28903654" sideWeight="0.6106061" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28903654" sideWeight="0.59924245" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998326" sideWeight="0.66360855" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Aspects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3255814" sideWeight="0.44848484" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3255814" sideWeight="0.43333334" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="EJB" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -2226,18 +2325,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/impl/GenericHibernateDaoImpl.java</url>
-          <line>80</line>
+          <line>81</line>
           <properties class="ru.mail.mina.repository.impl.GenericHibernateDaoImpl" method="findAll" />
           <option name="timeStamp" value="14" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/impl/GenericHibernateDaoImpl.java</url>
-          <line>99</line>
-          <properties class="ru.mail.mina.repository.impl.GenericHibernateDaoImpl" method="findById" />
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="35" />
+      <option name="time" value="37" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2246,68 +2339,188 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/ru/mail/mina/web/AutoSaleServlet.java" />
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/pages/#register.jsp" />
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/dto/AdService.java">
+    <entry file="file://$PROJECT_DIR$/repository/src/main/resources/app.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/dto/UserService.java">
+    <entry file="file://$PROJECT_DIR$/web/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        <state relative-caret-position="189">
+          <caret line="9" column="35" lean-forward="false" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/implDTO/AdServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="107" column="17" lean-forward="false" selection-start-line="103" selection-start-column="2" selection-end-line="107" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/impl/AdGenericHibernateDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-201">
+          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/impl/UserHibernateDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
-          <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/modelDTO/AdDTO.java">
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/implDTO/AppUserDetailsServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        <state relative-caret-position="21">
+          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/modelDTO/AppUserPrincipal.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-406">
-          <caret line="20" column="40" lean-forward="false" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+        <state relative-caret-position="118">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/modelDTO/BasketDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+    <entry file="uml://DATABASE/9d7b67e2-8072-4e9d-89cd-277ec5d9b9cf">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>9d7b67e2-8072-4e9d-89cd-277ec5d9b9cf</OriginalElement>
+          <nodes>
+            <node x="" y="">9d7b67e2-8072-4e9d-89cd-277ec5d9b9cf.TABLE:webproject.t_servermessage</node>
+            <node x="" y="">9d7b67e2-8072-4e9d-89cd-277ec5d9b9cf.TABLE:webproject.t_ad</node>
+            <node x="" y="">9d7b67e2-8072-4e9d-89cd-277ec5d9b9cf.TABLE:webproject.t_fileentity</node>
+            <node x="" y="">9d7b67e2-8072-4e9d-89cd-277ec5d9b9cf.TABLE:webproject.t_news</node>
+            <node x="" y="">9d7b67e2-8072-4e9d-89cd-277ec5d9b9cf.TABLE:webproject.t_message</node>
+            <node x="" y="">9d7b67e2-8072-4e9d-89cd-277ec5d9b9cf.TABLE:webproject.t_basket</node>
+            <node x="" y="">9d7b67e2-8072-4e9d-89cd-277ec5d9b9cf.TABLE:webproject.t_user</node>
+            <node x="" y="">9d7b67e2-8072-4e9d-89cd-277ec5d9b9cf.TABLE:webproject.t_comments</node>
+            <node x="" y="">9d7b67e2-8072-4e9d-89cd-277ec5d9b9cf.TABLE:webproject.t_user_servermessage</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.2651576394502829" x="245.0" y="731.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Columns</Category>
+            <Category>Key columns</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/modelDTO/CommitDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+    <entry file="uml://DATABASE/9d7b67e2-8072-4e9d-89cd-277ec5d9b9cf.TABLE:webproject.t_fileentity">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>9d7b67e2-8072-4e9d-89cd-277ec5d9b9cf.TABLE:webproject.t_fileentity</OriginalElement>
+          <nodes>
+            <node x="" y="">9d7b67e2-8072-4e9d-89cd-277ec5d9b9cf.TABLE:webproject.t_fileentity</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.8539614561027837" x="190.0" y="721.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Columns</Category>
+            <Category>Key columns</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/modelDTO/MessageDTO.java">
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/implDTO/AdServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="21">
+          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/util/AdConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="24" column="48" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/model/Ad.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2348">
+          <caret line="214" column="44" lean-forward="false" selection-start-line="214" selection-start-column="44" selection-end-line="214" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/WebProjectd5395393/9d7b67e2-8072-4e9d-89cd-277ec5d9b9cf/webproject.t_ad">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/WebProjectd5395393/9d7b67e2-8072-4e9d-89cd-277ec5d9b9cf/webproject.t_comments">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/modelDTO/UserDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-377">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/ru/mail/mina/web/config/HibernateConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="52" column="134" lean-forward="false" selection-start-line="52" selection-start-column="134" selection-end-line="52" selection-end-column="134" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/pages/selectAds.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="42" column="11" lean-forward="false" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/pages/profile.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="60" lean-forward="false" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="60" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/modelDTO/NewsDTO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="189">
+          <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2318,322 +2531,291 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/modelDTO/UserDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="57" column="18" lean-forward="false" selection-start-line="57" selection-start-column="18" selection-end-line="57" selection-end-column="18" />
-          <folding>
-            <element signature="e#1245#1246#0" expanded="false" />
-            <element signature="e#1276#1277#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/util/AdConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/util/UserConverter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="22" column="33" lean-forward="false" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/ru/mail/mina/web/config/AppConfig.java">
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/ru/mail/mina/web/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <caret line="54" column="48" lean-forward="true" selection-start-line="54" selection-start-column="48" selection-end-line="54" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/ru/mail/mina/web/config/HibernateConfig.java">
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/pages/allNews.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-357">
-          <caret line="30" column="35" lean-forward="false" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+        <state relative-caret-position="141">
+          <caret line="8" column="6" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="8" selection-end-column="6" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/ru/mail/mina/web/initializer/ApplicationInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/ru/mail/mina/web/config/WebMVCConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-364">
-          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/ru/mail/mina/web/ImagesServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/ru/mail/mina/web/UploadImage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-105">
-          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/ru/mail/mina/web/initializer/SecurityWebApplicationInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/dao/UserGenericHibernateDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/implDTO/AppUserDetailsServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="29" column="3" lean-forward="false" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/4.2.3.RELEASE/spring-security-core-4.2.3.RELEASE.jar!/org/springframework/security/core/userdetails/UserDetailsService.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="11" column="16" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/dao/GenericHibernateDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="10" column="7" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/java/ru/mail/mina/web/AdController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="38" column="57" lean-forward="false" selection-start-line="38" selection-start-column="57" selection-end-line="38" selection-end-column="57" />
+        <state relative-caret-position="189">
+          <caret line="32" column="52" lean-forward="true" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/ru/mail/mina/web/StartPageController.java">
+    <entry file="file://$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/dao/AdGenericHibernateDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="243">
+          <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/WebProjectd5395393/9d7b67e2-8072-4e9d-89cd-277ec5d9b9cf/webproject.t_message">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/dto/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="18" column="39" lean-forward="false" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/dto/AdService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/dao/UserGenericHibernateDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/model/FileEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#657#658#0" expanded="false" />
+            <element signature="e#682#683#0" expanded="false" />
+            <element signature="e#719#720#0" expanded="false" />
+            <element signature="e#747#748#0" expanded="false" />
+            <element signature="e#782#783#0" expanded="false" />
+            <element signature="e#813#814#0" expanded="false" />
+            <element signature="e#861#862#0" expanded="false" />
+            <element signature="e#901#902#0" expanded="false" />
+            <element signature="e#936#937#0" expanded="false" />
+            <element signature="e#967#968#0" expanded="false" />
+            <element signature="e#1015#1016#0" expanded="false" />
+            <element signature="e#1055#1056#0" expanded="false" />
+            <element signature="e#1464#1465#0" expanded="false" />
+            <element signature="e#1523#1524#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/resources/properties/hibernate.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="40" lean-forward="false" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/implDTO/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-336">
-          <caret line="36" column="27" lean-forward="false" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/impl/GenericHibernateDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1201">
-          <caret line="48" column="9" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="48" selection-end-column="9" />
-          <folding>
-            <element signature="e#943#944#0" expanded="false" />
-            <element signature="e#999#1000#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/impl/UserHibernateDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/pages/createAd.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-882">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="36" />
+        <state relative-caret-position="21">
+          <caret line="47" column="43" lean-forward="false" selection-start-line="47" selection-start-column="43" selection-end-line="47" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/service/pom.xml">
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/dto/FileEntityService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="175">
+          <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/repository/pom.xml">
+    <entry file="file://$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-378">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/web.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-100">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="2" lean-forward="true" selection-start-line="15" selection-start-column="2" selection-end-line="15" selection-end-column="2" />
+        <state relative-caret-position="-254">
+          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/WebProjectd5395393/9d7b67e2-8072-4e9d-89cd-277ec5d9b9cf/webproject.t_ad">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/implDTO/FileEntityServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="819">
-          <caret line="39" column="36" lean-forward="false" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
+        <state relative-caret-position="399">
+          <caret line="26" column="16" lean-forward="false" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-taglibs/4.2.3.RELEASE/spring-security-taglibs-4.2.3.RELEASE.jar!/META-INF/security.tld">
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/util/UserConverter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-693">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/resources/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="446" column="26" lean-forward="true" selection-start-line="446" selection-start-column="26" selection-end-line="446" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/repository/src/main/resources/messages.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="55" lean-forward="false" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/ru/mail/mina/web/validator/UserValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="33" column="37" lean-forward="false" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/pages/autosale.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/pages/profile.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/pages/filter.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="175" column="62" lean-forward="true" selection-start-line="175" selection-start-column="60" selection-end-line="175" selection-end-column="62" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#6;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#6;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/WebProjectd5395393/9d7b67e2-8072-4e9d-89cd-277ec5d9b9cf/webproject.t_user">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.9.RELEASE/spring-web-4.3.9.RELEASE.jar!/org/springframework/web/bind/annotation/RequestMapping.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="10" lean-forward="false" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/ru/mail/mina/web/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-290">
-          <caret line="29" column="24" lean-forward="false" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/ru/mail/mina/web/config/SecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+        <state relative-caret-position="-214">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/pages/begin-html.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="79" column="34" lean-forward="true" selection-start-line="79" selection-start-column="34" selection-end-line="79" selection-end-column="34" />
+        <state relative-caret-position="702">
+          <caret line="150" column="84" lean-forward="false" selection-start-line="150" selection-start-column="79" selection-end-line="150" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/dao/GenericHibernateDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/dto/NewsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/model/News.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="25" column="5" lean-forward="false" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/src/main/java/ru/mail/mina/repository/impl/GenericHibernateDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="92" column="13" lean-forward="true" selection-start-line="92" selection-start-column="13" selection-end-line="92" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/util/NewsConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="31" column="40" lean-forward="true" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/src/main/java/ru/mail/mina/service/implDTO/NewsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-69">
+          <caret line="124" column="0" lean-forward="false" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1723#1724#0" expanded="true" />
+            <element signature="e#1773#1774#0" expanded="true" />
+            <element signature="e#4215#4216#0" expanded="true" />
+            <element signature="e#4274#4275#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/java/ru/mail/mina/web/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="60" column="13" lean-forward="true" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
+          <folding>
+            <marker date="1503594785205" expanded="true" signature="1654:1705" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/pages/createAd.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="81" column="93" lean-forward="false" selection-start-line="81" selection-start-column="93" selection-end-line="81" selection-end-column="93" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/src/main/resources/messages.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/src/main/resources/initial_data.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="54" lean-forward="false" selection-start-line="2" selection-start-column="54" selection-end-line="2" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/resources/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="408" column="1" lean-forward="false" selection-start-line="408" selection-start-column="1" selection-end-line="408" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/WEB-INF/pages/administrator.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="66" column="35" lean-forward="false" selection-start-line="66" selection-start-column="35" selection-end-line="66" selection-end-column="35" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/webapp/resources/script/imgpreview.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="28" column="24" lean-forward="false" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/WebProjectd5395393/9d7b67e2-8072-4e9d-89cd-277ec5d9b9cf/webproject.t_news">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/WebProjectd5395393/9d7b67e2-8072-4e9d-89cd-277ec5d9b9cf/webproject.t_fileentity">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
