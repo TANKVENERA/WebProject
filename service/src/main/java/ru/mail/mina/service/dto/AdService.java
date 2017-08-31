@@ -2,8 +2,9 @@ package ru.mail.mina.service.dto;
 
 import org.springframework.stereotype.Service;
 import ru.mail.mina.repository.model.Ad;
-import ru.mail.mina.service.modelDTO.AdDTO;
+import ru.mail.mina.service.model.AdDTO;
 
+import java.io.IOException;
 import java.util.List;
 
 /**
@@ -16,4 +17,17 @@ public interface AdService {
                          String priceTo);
 
     List<AdDTO> findAll();
+
+    void saveAd(AdDTO adDTO) throws IOException;
+
+    AdDTO getById (Integer id);
+
+    List<AdDTO> getAdsByUser();
+
+    void deleteAd(Integer id);
+
+    void updateAd(AdDTO adDTO) throws IOException;
+
+    List<AdDTO> getAdsByUserName(String userName);
+
 }

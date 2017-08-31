@@ -4,6 +4,7 @@ package ru.mail.mina.repository.model;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -22,17 +23,14 @@ public class Basket implements Serializable {
     @GeneratedValue(strategy = IDENTITY)
     private Integer id;
 
-    @OneToMany(fetch = FetchType.LAZY, orphanRemoval = true)
-    @JoinColumn(name = "fk_Basket")
-    private List<Ad> ads;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "fk_Ad")
+    private Ad ad ;
 
-    @OneToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "fk_User")
-    private User user;
 
-    public Basket() {
 
-    }
+    private Integer loggedUserId;
+
 
     public Integer getId() {
         return id;
@@ -42,19 +40,19 @@ public class Basket implements Serializable {
         this.id = id;
     }
 
-    public List<Ad> getAds() {
-        return ads;
+    public Ad getAd() {
+        return ad;
     }
 
-    public void setAds(List<Ad> ads) {
-        this.ads = ads;
+    public void setAd(Ad ad) {
+        this.ad = ad;
     }
 
-    public User getUser() {
-        return user;
+    public Integer getLoggedUserId() {
+        return loggedUserId;
     }
 
-    public void setUser(User user) {
-        this.user = user;
+    public void setLoggedUserId(Integer loggedUserId) {
+        this.loggedUserId = loggedUserId;
     }
 }

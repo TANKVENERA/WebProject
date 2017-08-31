@@ -5,14 +5,15 @@
 <c:forEach var="ad" items="${listAds}">
     <div class="adv">
         <div horizontal="hor" class="photo">
-            <a href="#"><img src="${pageContext.request.contextPath}/images?foto=${ad.carPhotos[0].filePath}"
-                             width="195" height="195" style="vertical-align: bottom; border-radius: 10px"></a>
+            <a href="${pageContext.request.contextPath}/ad/<c:out value="${ad.id}"/>"><img
+                    src="${pageContext.request.contextPath}/downloadEntity/<c:out value="${ad.adEntities[0].id}?type=ad"/>"
+                    width="195" height="195" style="vertical-align: bottom; border-radius: 10px"></a>
         </div>
         <div horizontal="hor" class="price">
             <ul align="a">
                 <ul v="v">
                     <li><a cursiv="c">г.в</a></li>
-                    <li><a style="text-decoration: none"><strong>${ad.yearOfIssue}</strong></a></li>
+                    <li><a style="text-decoration: none"><strong>${ad.yearOfIssue} </strong></a></li>
                 </ul>
                 <ul v="v">
                     <li><a cursiv="c">цена</a></li>
@@ -27,7 +28,8 @@
         </div>
         <div horizontal="hor" class="info">
             <div style="height: 35px; color: #1a60ba">
-                <a href="#" style="text-decoration: none;"><strong>${ad.modelAuto} ${ad.markAuto}</strong></a>
+                <a href="${pageContext.request.contextPath}/ad/<c:out value="${ad.id}"/>"
+                   style="text-decoration: none;"><strong>${ad.modelAuto} ${ad.markAuto}</strong></a>
             </div>
             <div style="height:35px; font-size: 20px ">
                 <b> ${ad.transmission}, ${ad.engine}</b>
@@ -42,7 +44,10 @@
             </div>
         </div>
         <div horizontal="hor" class="basket">
-            <a href="#"><i class="fa fa-shopping-basket fa-3x" aria-hidden="true" style="color: #987c7c"></i></a>
+            <security:authorize access="isAuthenticated()">
+                <a href="${pageContext.request.contextPath}/addToBasket/<c:out value="${ad.id}"/>" class="changeable"><i class="fa fa-shopping-basket fa-3x" aria-hidden="true"></i></a>
+            </security:authorize>
         </div>
     </div>
 </c:forEach>
+<script src="resources/script/changeColor.js"></script>

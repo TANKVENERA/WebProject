@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.validation.Errors;
 import org.springframework.validation.ValidationUtils;
 import org.springframework.validation.Validator;
-import ru.mail.mina.service.modelDTO.UserDTO;
+import ru.mail.mina.service.model.UserDTO;
 
 /**
  * Created by Администратор on 18.08.2017.

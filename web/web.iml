@@ -13,11 +13,11 @@
     </facet>
     <facet type="Spring" name="Spring">
       <configuration>
-        <fileset id="fileset2" name="Spring Application Context " removed="false">
-          <file>file://$MODULE_DIR$/src/main/java/ru/mail/mina/web/config/AppConfig.java</file>
+        <fileset id="fileset" name="Spring Application Context" removed="false">
           <file>file://$MODULE_DIR$/src/main/java/ru/mail/mina/web/config/HibernateConfig.java</file>
-          <file>file://$MODULE_DIR$/src/main/java/ru/mail/mina/web/config/WebMVCConfig.java</file>
           <file>file://$MODULE_DIR$/src/main/java/ru/mail/mina/web/config/SecurityConfig.java</file>
+          <file>file://$MODULE_DIR$/src/main/java/ru/mail/mina/web/config/AppConfig.java</file>
+          <file>file://$MODULE_DIR$/src/main/java/ru/mail/mina/web/config/WebMVCConfig.java</file>
         </fileset>
       </configuration>
     </facet>

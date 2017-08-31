@@ -44,22 +44,16 @@ public abstract class GenericHibernateDaoImpl<T extends Serializable, ID extends
 
     @Override
     public void update(T entity) {
-
         try {
-
         getSession().update(entity);
-
         } catch (Exception e) {
             e.printStackTrace();
-        } finally {
         }
     }
-
 
     @Override
     public void saveOrUpdate(T entity) {
         getSession().saveOrUpdate(entity);
-
     }
 
     /*here the variable clazz should be instantiated with the help of calling superconstructor
@@ -67,14 +61,9 @@ public abstract class GenericHibernateDaoImpl<T extends Serializable, ID extends
     @Override
     public void delete(ID id) {
         try {
-
             T t = (T) getSession().get(clazz, id);
             getSession().delete(t);
-
         } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-
         }
     }
 
@@ -85,7 +74,6 @@ public abstract class GenericHibernateDaoImpl<T extends Serializable, ID extends
             list = getSession().createCriteria(clazz).list();
         } catch (Exception e) {
             e.printStackTrace();
-        } finally {
         }
         return list;
     }
@@ -98,9 +86,7 @@ public abstract class GenericHibernateDaoImpl<T extends Serializable, ID extends
             getSession().evict(t);
         } catch (Exception e) {
             e.printStackTrace();
-        } finally {
         }
-
         return t;
     }
 }

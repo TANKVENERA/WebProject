@@ -4,12 +4,14 @@
 <c:forEach var="element" items="${news}">
     <div class="news" >
         <div horizontal="hor" class="photo">
-    <img src="${pageContext.request.contextPath}/downloadNews/<c:out value="${element.fileEntity.id}"/>" alt="Smiley face"
-    height="300" width="450" style="border-radius: 10px">
+            <a href="${pageContext.request.contextPath}/news/<c:out value="${element.id}"/>">
+    <img src="${pageContext.request.contextPath}/downloadEntity/<c:out value="${element.newsEntity.id}?type=news"/>" alt="Smiley face"
+         height="300" width="450" style="border-radius: 10px"></a>
 </div>
 <div horizontal="hor" class="news_title">
 <div style="height: 270px;  width:500px;">
-   <strong>${element.title}</strong>
+    <a href="${pageContext.request.contextPath}/news/<c:out value="${element.id}"/>">
+        <strong>${element.title}</strong></a>
 </div>
     <div style="height: 35px; font-size: 18px; ">
   ${element.date}

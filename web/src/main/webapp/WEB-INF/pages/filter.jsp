@@ -87,47 +87,20 @@
         <div class="carousel-inner" class="cars">
             <div class="item active">
                 <a class="carousel" href="#">
-                    <img src="${pageContext.request.contextPath}/resources/images/typoi.gif" alt=""> </a>
+                    <img src="${pageContext.request.contextPath}/downloadNews/<c:out value="${element.newsEntity.id}"/>" alt=""> </a>
                 <div class="carousel-caption">
-                    <h3> News </h3>
+                    <h3> AUTOSALE </h3>
                 </div>
             </div>
-            <div class="item">
-                <a class="carousel" href="#">
-                    <img src="${pageContext.request.contextPath}/resources/images/nikulin.gif" alt=""> </a>
-                <div class="carousel-caption">
-                    <h3> NEWS </h3>
+            <c:forEach var="element" items="${news}">
+                <div class="item">
+                    <a class="carousel" href="#">
+                        <img src="${pageContext.request.contextPath}/downloadEntity/<c:out value="${element.newsEntity.id}?type=news"/>" alt=""> </a>
+                    <div class="carousel-caption">
+                        <h3> ${element.title} </h3>
+                    </div>
                 </div>
-            </div>
-            <div class="item">
-                <a class="carousel" href="#">
-                    <img src="${pageContext.request.contextPath}/resources/images/mers.jpg" alt=""> </a>
-                <div class="carousel-caption">
-                    <h3> News </h3>
-                </div>
-            </div>
-            <div class="item">
-                <a class="carousel" href="#">
-                    <img src="${pageContext.request.contextPath}/resources/images/audi.jpg" alt="">
-                </a>
-                <div class="carousel-caption">
-                    <h3> Новость </h3>
-                </div>
-            </div>
-            <div class="item">
-                <a class="carousel" href="#">
-                    <img src="${pageContext.request.contextPath}/resources/images/porsh.jpg" alt=""></a>
-                <div class="carousel-caption">
-                    <h3> Something new </h3>
-                </div>
-            </div>
-            <div class="item">
-                <a class="carousel" href="#">
-                    <img src="${pageContext.request.contextPath}/resources/images/vaz.jpg" alt=""></a>
-                <div class="carousel-caption">
-                    <h6> NEWS </h6>
-                </div>
-            </div>
+            </c:forEach>
         </div>
         <a class="left carousel-control" href="#locations" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left"></span>

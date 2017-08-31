@@ -3,11 +3,15 @@ D:\WebProject\web\src\main\java\ru\mail\mina\web\config\HibernateConfig.java
 D:\WebProject\web\src\main\java\ru\mail\mina\web\config\SecurityConfig.java
 D:\WebProject\web\src\main\java\ru\mail\mina\web\initializer\SecurityWebApplicationInitializer.java
 D:\WebProject\web\src\main\java\ru\mail\mina\web\UserController.java
+D:\WebProject\web\src\main\java\ru\mail\mina\web\SuperAdminController.java
+D:\WebProject\web\src\main\java\ru\mail\mina\web\BasketController.java
 D:\WebProject\web\src\main\java\ru\mail\mina\web\initializer\ApplicationInitializer.java
 D:\WebProject\web\src\main\java\ru\mail\mina\web\StartPageController.java
-D:\WebProject\web\src\main\java\ru\mail\mina\web\ImagesServlet.java
+D:\WebProject\web\src\main\java\ru\mail\mina\web\DownLoadEntityController.java
+D:\WebProject\web\src\main\java\ru\mail\mina\web\SingleNewsController.java
 D:\WebProject\web\src\main\java\ru\mail\mina\web\validator\UserValidator.java
-D:\WebProject\web\src\main\java\ru\mail\mina\web\UploadImage.java
+D:\WebProject\web\src\main\java\ru\mail\mina\web\SuperAdminUpdateUserController.java
+D:\WebProject\web\src\main\java\ru\mail\mina\web\SuperAdminUpdateAdController.java
 D:\WebProject\web\src\main\java\ru\mail\mina\web\AdminController.java
 D:\WebProject\web\src\main\java\ru\mail\mina\web\config\AppConfig.java
 D:\WebProject\web\src\main\java\ru\mail\mina\web\config\WebMVCConfig.java

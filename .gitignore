@@ -1,1 +1,37 @@
-# Created by .ignore support plugin (hsz.mobi)
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+*.iml
+*.ipr
+*.iws
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+target/
+
+dataSources/9d7b67e2-8072-4e9d-89cd-277ec5d9b9cf/_src_/
+dataSources/9d7b67e2-8072-4e9d-89cd-277ec5d9b9cf/_staging_/
+repository/target/generated-sources/
+repository/target/generated-test-sources/
+service/target/generated-sources/
+service/target/generated-test-sources/
+web/target/apache-tomcat-maven-plugin/
+web/target/autosale/META-INF/
+web/target/generated-sources/
+web/target/tomcat/webapps/

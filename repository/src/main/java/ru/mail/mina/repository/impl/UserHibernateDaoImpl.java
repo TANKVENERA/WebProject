@@ -28,20 +28,14 @@ public class UserHibernateDaoImpl extends GenericHibernateDaoImpl<User, Integer>
 
 
     @Override
-    @Transactional
     public User getUserByAd(Integer adId) {
         User user = null;
         try {
-            getSession().beginTransaction();
             String hql = "SELECT ad.user  from Ad ad WHERE ad.id=:adId ";
             Query query =  getSession().createQuery(hql);
             query.setParameter("adId", adId); // set a parameter for transfering  adId value into hql query
             user = (User) query.list().get(0);
-            getSession().getTransaction().commit();
         } catch (Exception e) {
-        } finally {
-            if ( getSession() != null &&  getSession().isOpen()) {
-            }
         }
         return user;
     }
@@ -50,7 +44,7 @@ public class UserHibernateDaoImpl extends GenericHibernateDaoImpl<User, Integer>
     @Transactional
     public User getByUserName(String username) {
         String hql = "From User  u where u.username=:username";
-        Query query =  getSession().createQuery(hql);
+       Query query =  getSession().createQuery(hql);
         query.setParameter("username", username);
         User user = (User) query.uniqueResult();
         return user;

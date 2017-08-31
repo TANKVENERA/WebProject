@@ -8,9 +8,7 @@ import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 import java.io.Serializable;
-import java.util.HashSet;
-import java.util.Objects;
-import java.util.Set;
+import java.util.*;
 
 import static javax.persistence.GenerationType.IDENTITY;
 
@@ -37,14 +35,12 @@ public class User implements Serializable {
     private Role role;
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "user", cascade = CascadeType.ALL)
-    private Set<Ad> ads = new HashSet<>();
+    private List<Ad> ads = new ArrayList<>();
 
     @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinColumn(name = "fk_User")
     private Set<News> news = new HashSet<>();
 
-    @OneToOne(fetch = FetchType.LAZY, mappedBy = "user", cascade = CascadeType.ALL)
-    private Basket basket;
 
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "user", cascade = CascadeType.ALL)
     private Set<Comment> comments = new HashSet<>();
@@ -58,9 +54,7 @@ public class User implements Serializable {
             inverseJoinColumns = {@JoinColumn(name = "fk_ServerMessage", referencedColumnName = "id")})
     private Set<ServerMessage> serverMessages = new HashSet<>();
 
-    public User() {
 
-    }
 
     public Integer getId() {
         return id;
@@ -94,21 +88,14 @@ public class User implements Serializable {
         this.password = password;
     }
 
-    public Set<Ad> getAds() {
+    public List<Ad> getAds() {
         return ads;
     }
 
-    public void setAds(Set<Ad> ads) {
+    public void setAds(List<Ad> ads) {
         this.ads = ads;
     }
 
-    public Basket getBasket() {
-        return basket;
-    }
-
-    public void setBasket(Basket basket) {
-        this.basket = basket;
-    }
 
     public Set<News> getNews() {
         return news;

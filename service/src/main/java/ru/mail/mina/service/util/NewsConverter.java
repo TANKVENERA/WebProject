@@ -1,21 +1,14 @@
 package ru.mail.mina.service.util;
 
 import ru.mail.mina.repository.model.News;
-import ru.mail.mina.service.modelDTO.NewsDTO;
-
-import java.io.File;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
+import ru.mail.mina.service.model.NewsDTO;
 
 /**
  * Created by Администратор on 20.08.2017.
  */
 public class NewsConverter {
 
-    private NewsConverter() {
 
-    }
 
     public static NewsDTO convert(News news) { // downloading from database
         NewsDTO newsDTO = new NewsDTO();
@@ -23,7 +16,7 @@ public class NewsConverter {
         newsDTO.setText(news.getText());
         newsDTO.setTitle(news.getTitle());
         newsDTO.setDate(news.getDate());
-        newsDTO.setFileEntity(news.getFileEntity());
+        newsDTO.setNewsEntity(news.getNewsEntity());
         return newsDTO;
     }
 

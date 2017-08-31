@@ -1,10 +1,10 @@
 package ru.mail.mina.repository.model;
 
+import org.hibernate.annotations.GenericGenerator;
+
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.*;
-
-import static javax.persistence.GenerationType.IDENTITY;
 
 /**
  * Created by Администратор on 15.07.2017.
@@ -16,7 +16,9 @@ public class Ad implements Serializable {
     private static final long serialVersionUID = 8348179393581584247L;
 
     @Id
-    @GeneratedValue(strategy = IDENTITY)
+//    @GeneratedValue(strategy = IDENTITY)
+    @GenericGenerator(name="k" , strategy="increment")
+    @GeneratedValue (generator="k")
     private Integer id;
 
     private String markAuto;
@@ -37,28 +39,29 @@ public class Ad implements Serializable {
 
     private String bodyStyle;
 
+    private String date;
 
 
     @Column(name = "F_CARDESCRIPTION", length = 2000)
     private String carDescription;
 
-    private Integer fk_Basket;
 
-    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "fk_User", nullable = false)
     private User user;
 
     @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @JoinColumn(name = "fk_Ad")
+    @JoinColumn(name = "FK_Ad")
     private Set<Comment> comments = new HashSet<>();
 
-//    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-//    @JoinColumn(name = "FK_CarPhotos")
-//    private List<FileEntity> carPhotos = new LinkedList<>();
+    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JoinColumn(name = "FK_Ad")
+    private List<AdEntity> adEntities = new LinkedList<>();
 
-    public Ad() {
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "ad", cascade = CascadeType.ALL)
+    private List<Basket> baskets = new LinkedList<>();
 
-    }
 
     public Integer getId() {
         return id;
@@ -116,13 +119,6 @@ public class Ad implements Serializable {
         this.user = user;
     }
 
-    public Integer getFk_Basket() {
-        return fk_Basket;
-    }
-
-    public void setFk_Basket(Integer fk_Basket) {
-        this.fk_Basket = fk_Basket;
-    }
 
     public Set<Comment> getComments() {
         return comments;
@@ -132,13 +128,22 @@ public class Ad implements Serializable {
         this.comments = comments;
     }
 
-//    public List<FileEntity> getCarPhotos() {
-//        return carPhotos;
-//    }
-//
-//    public void setCarPhotos(List<FileEntity> carPhotos) {
-//        this.carPhotos = carPhotos;
-//    }
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public List<AdEntity> getAdEntities() {
+        return adEntities;
+    }
+
+    public void setAdEntities(List<AdEntity> adEntities) {
+        this.adEntities = adEntities;
+    }
+
 
     public String getTransmission() {
         return transmission;
@@ -180,6 +185,13 @@ public class Ad implements Serializable {
         this.bodyStyle = bodyStyle;
     }
 
+    public List<Basket> getBaskets() {
+        return baskets;
+    }
+
+    public void setBaskets(List<Basket> baskets) {
+        this.baskets = baskets;
+    }
 
     @Override
     public boolean equals(Object o) {
@@ -212,7 +224,6 @@ public class Ad implements Serializable {
                 ", color='" + color + '\'' +
                 ", bodyStyle='" + bodyStyle + '\'' +
                 ", carDescription='" + carDescription + '\'' +
-                ", fk_Basket=" + fk_Basket +
                 '}';
     }
 }

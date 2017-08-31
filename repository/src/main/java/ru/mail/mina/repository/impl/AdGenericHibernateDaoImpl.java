@@ -1,16 +1,16 @@
 package ru.mail.mina.repository.impl;
 
 import org.hibernate.Criteria;
-import org.hibernate.Query;
-import org.hibernate.Session;
-import org.hibernate.criterion.Projections;
 import org.hibernate.criterion.Restrictions;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 import ru.mail.mina.repository.dao.AdGenericHibernateDao;
 import ru.mail.mina.repository.model.Ad;
+import ru.mail.mina.repository.model.User;
 
 
-
+import javax.persistence.Query;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -47,13 +47,23 @@ public class AdGenericHibernateDaoImpl extends GenericHibernateDaoImpl<Ad, Integ
         if (!priceTo.isEmpty()) {
             criteria.add(Restrictions.le("price", Integer.valueOf(priceTo)));
         }
-//        criteria.setFirstResult(0);
-//        criteria.setMaxResults(5);
+        criteria.setFirstResult(0);
+        criteria.setMaxResults(5);
         List<Ad> list = criteria.list();
-//        Criteria criteriaCount = session.createCriteria(Ad.class);
-//        criteriaCount.setProjection(Projections.rowCount());
-//        Long count = (Long) criteriaCount.uniqueResult();
-//        session.getTransaction().commit();
         return list;
     }
+
+    @Override
+    public List<Ad> getAdsByUserName(String userName) {
+        List<Ad> list = null;
+        try {
+            String hql = "From Ad  ad where ad.user.username=:userName";
+            Query query = getSession().createQuery(hql);
+            query.setParameter("userName", userName);
+           list =  query.getResultList();
+        } catch (Exception e) {
+        }
+        return list;
+    }
+
 }

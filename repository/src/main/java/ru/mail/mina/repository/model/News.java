@@ -1,16 +1,10 @@
 package ru.mail.mina.repository.model;
 
 import org.hibernate.annotations.GenericGenerator;
-import org.hibernate.id.IncrementGenerator;
 
 import javax.persistence.*;
-import javax.persistence.criteria.CriteriaBuilder;
 import java.io.Serializable;
-import java.util.Date;
 import java.util.Objects;
-
-import static javax.persistence.GenerationType.AUTO;
-import static javax.persistence.GenerationType.IDENTITY;
 
 /**
  * Created by Администратор on 23.07.2017.
@@ -33,8 +27,8 @@ public class News implements Serializable{
     private String text;
 
     @OneToOne (fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    @JoinColumn(name="FK_FileEntity")
-    private FileEntity fileEntity;
+    @JoinColumn(name="FK_NewsEntity")
+    private NewsEntity newsEntity;
 
     private Integer fk_User;
 
@@ -74,12 +68,12 @@ public class News implements Serializable{
         this.fk_User = fk_User;
     }
 
-    public FileEntity getFileEntity() {
-        return fileEntity;
+    public NewsEntity getNewsEntity() {
+        return newsEntity;
     }
 
-    public void setFileEntity(FileEntity fileEntity) {
-        this.fileEntity = fileEntity;
+    public void setNewsEntity(NewsEntity newsEntity) {
+        this.newsEntity = newsEntity;
     }
 
     public String getTitle() {
@@ -111,7 +105,7 @@ public class News implements Serializable{
                 "id=" + id +
                 ", date=" + date +
                 ", text='" + text + '\'' +
-                ", fileEntity=" + fileEntity +
+                ", newsEntity=" + newsEntity +
                 ", fk_User=" + fk_User +
                 '}';
     }

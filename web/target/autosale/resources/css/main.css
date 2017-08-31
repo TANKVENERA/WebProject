@@ -325,13 +325,16 @@ div[horizontal] {
 }
 
 .text {
-    height: 125px;
     text-align: justify;
 }
 
 ul[v] {
     padding-bottom: 5px;
     padding-left: 5px;
+    list-style-type: none;
+}
+ul[a] {
+    padding: 10px;
     list-style-type: none;
 }
 
@@ -387,6 +390,9 @@ ul[align] {
 #file {
     visibility: hidden;
 }
+.files {
+    visibility: hidden;
+}
 label[in]{
     background: #009688;
     color: #fff;
@@ -407,6 +413,11 @@ label[in]:hover{
     padding: 30px;
 }
 #imgpreview{
+    margin: 10px;
+    width: 220%;
+    margin-left: -50%;
+}
+#imgprev{
     margin: 10px;
     width: 220%;
     margin-left: -50%;
@@ -463,6 +474,10 @@ input[profile]{
     font-family: CTCSplashRounded;
     letter-spacing: 6px;
     font-size: 25px;
+}
+a[c] {
+    font-family: cursive;
+    color: black;
 }
 
 
