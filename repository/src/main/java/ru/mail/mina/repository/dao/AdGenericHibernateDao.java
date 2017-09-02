@@ -11,8 +11,10 @@ import java.util.List;
 public interface AdGenericHibernateDao extends GenericHibernateDao<Ad, Integer> {
 
         List<Ad> filter (String model, String mark, String yearFrom, String yearTo, String priceFrom,
-                         String priceTo);
+                         String priceToe);
 
        List<Ad>  getAdsByUserName (String userName);
+
+        List<Ad> getAll(Integer page);
 
 }

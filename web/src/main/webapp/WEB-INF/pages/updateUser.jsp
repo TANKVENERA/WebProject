@@ -33,8 +33,9 @@ border-bottom-left-radius:15px;">
         <div class="Mymodal" style="width: 400px; height: 400px; background-color: #5cb85c" >
             <f:form method="POST" modelAttribute="user" action="${pageContext.request.contextPath}/updateUser">
                 <strong modal="m" style="font-size: 35px">Настройки аккаунта</strong>
-                <f:input modal="m" value="${user.id}" path="id" type="hidden"/><br>
-                <f:input modal="m" value="${user.email}" path="email"    type="hidden" /><br>
+                <f:input modal="m" value="${user.id}" path="id" type="hidden"/>
+                <f:input modal="m" value="${user.email}" path="email"    type="hidden" />
+                <f:input modal="m" value="${user.password}" path="password"    type="hidden" /><br>
                 <p class="bg-danger" ><f:errors path="username"/></p>
                 <f:input modal="m" value="${user.username}" path="username" type="text" placeholder="Имя"/><br>
                 <input modal="m" value="${user.email}" disabled="disabled"/>

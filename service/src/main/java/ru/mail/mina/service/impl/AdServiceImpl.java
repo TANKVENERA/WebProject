@@ -6,16 +6,15 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.FileCopyUtils;
+import org.springframework.web.multipart.MultipartFile;
 import ru.mail.mina.repository.dao.AdGenericHibernateDao;
 import ru.mail.mina.repository.dao.UserGenericHibernateDao;
 import ru.mail.mina.repository.model.Ad;
 import ru.mail.mina.repository.model.AdEntity;
-import ru.mail.mina.repository.model.NewsEntity;
 import ru.mail.mina.repository.model.User;
 import ru.mail.mina.service.dto.AdService;
 import ru.mail.mina.service.model.AdDTO;
 import ru.mail.mina.service.model.AppUserPrincipal;
-import ru.mail.mina.service.model.NewsDTO;
 import ru.mail.mina.service.util.AdConverter;
 
 import java.io.File;
@@ -46,7 +45,8 @@ public class AdServiceImpl implements AdService {
 
     @Override
     @Transactional
-    public List<AdDTO> filterAd(String model, String mark, String yearFrom, String yearTo, String priceFrom, String priceTo) {
+    public List<AdDTO> filterAd(String model, String mark, String yearFrom, String yearTo,
+                                String priceFrom, String priceTo) {
         List<AdDTO> adDTOList = new ArrayList<>();
         List<Ad> list = adGenericHibernateDao.filter(model, mark, yearFrom, yearTo, priceFrom, priceTo);
         for (Ad element : list) {
@@ -142,25 +142,40 @@ public class AdServiceImpl implements AdService {
         return adDTOList;
     }
 
+    @Override
+    @Transactional
+    public List<AdDTO> getAll(Integer page) {
+        List<AdDTO> adDTOList = new ArrayList<>();
+        List<Ad> list = adGenericHibernateDao.getAll(page);
+        for (Ad element : list) {
+            AdDTO adDTO = AdConverter.convert(element);
+            adDTOList.add(adDTO);
+        }
+        return adDTOList;
+    }
+
     private AdEntity getAdsEntity(AdDTO adDTO) throws IOException {
+        Integer id = adDTO.getId();
+        String date = adDTO.getDate();
+        MultipartFile multipartFile = adDTO.getFile();
         String finalPath;
-        String fileName = adDTO.getDate() == null ? getById(adDTO.getId()).getDate() : adDTO.getDate();
+        String fileName = date == null ? getById(id).getDate() : date;
         String fileLocation = environment.getProperty("upload.adsLocation") + fileName + "\\";
         File file = new File(fileLocation);
         if (!file.exists()) {
             AdEntity adEntity = new AdEntity();
             file.mkdirs();
             finalPath = fileLocation + fileName;
-            FileCopyUtils.copy(adDTO.getFile().getBytes(), new File(finalPath)); // из переменной MultiPartFile file извлекается картинка
+            FileCopyUtils.copy(multipartFile.getBytes(), new File(finalPath)); // из переменной MultiPartFile file извлекается картинка
             adEntity.setFilePath(fileLocation);
             adEntity.setFileName(fileName);
             return adEntity;
         } else {
-            AdEntity adEntity = getById(adDTO.getId()).getAdEntities().get(0);
-            if (!adDTO.getFile().isEmpty()) {
+            AdEntity adEntity = getById(id).getAdEntities().get(0);
+            if (!multipartFile.isEmpty()) {
                 String newFileName = new SimpleDateFormat("dd-MM-yyyy HH-mm").format(new Date());
                 finalPath = fileLocation + newFileName;
-                FileCopyUtils.copy(adDTO.getFile().getBytes(), new File(finalPath));
+                FileCopyUtils.copy(multipartFile.getBytes(), new File(finalPath));
                 adEntity.setFileName(newFileName);
             }
             return adEntity;

@@ -88,7 +88,7 @@
                         <div class="form-group">
                             <label for="password" class="sr-only">Password</label>
                             <input type="password" name="password" size="16" class="form-control" id="password"
-                                   placeholder="Password" required="">
+                                   placeholder="Password">
                         </div>
                         <button type="submit" class="btn btn-default">Войти</button>
                     </form>
@@ -97,7 +97,7 @@
                     <div class="form-inline navbar-form">
                         <button class="btn btn-default"><a href="${pageContext.request.contextPath}/#register"
                                                            class="registerLink"
-                                                           style="text-decoration: none; margin-right: 0em">
+                                                           style="text-decoration: none; margin-right: 0">
                             Регистрация</a></button>
                     </div>
                 </div>
@@ -110,8 +110,7 @@
                                 <security:authentication property="principal.username"/></p>
                         </div>
                         <div style=" display: inline-block; ">
-                            <button class="btn btn-default"><a href="<c:url value="/logout" />" class="registerLink"
-                                                               style="text-decoration: none;">
+                            <button class="btn btn-default"><a href="<c:url value="/logout" />" class="registerLink" style="text-decoration: none;">
                                 Выход</a></button>
                         </div>
                     </div>
@@ -156,7 +155,7 @@
                             <li><a href="${pageContext.request.contextPath}/admin">Администратор</a></li>
                         </security:authorize>
                         <security:authorize access="hasRole('ROLE_SuperAdmin')">
-                            <li><a href="${pageContext.request.contextPath}/profile">СуперАдминистратор</a></li>
+                            <li><a href="${pageContext.request.contextPath}/superadmin">СуперАдминистратор</a></li>
                         </security:authorize>
                     </security:authorize>
                 </ul>

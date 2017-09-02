@@ -1,9 +1,6 @@
 package ru.mail.mina.service.dto;
 
-
-import ru.mail.mina.repository.model.News;
 import ru.mail.mina.service.model.NewsDTO;
-
 import java.io.IOException;
 import java.util.List;
 

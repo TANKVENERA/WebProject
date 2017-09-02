@@ -3,22 +3,14 @@ package ru.mail.mina.web;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import ru.mail.mina.service.dto.UserService;
-import ru.mail.mina.service.model.NewsDTO;
 import ru.mail.mina.service.model.UserDTO;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.xml.soap.SOAPPart;
 import java.io.IOException;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 /**
@@ -69,11 +61,12 @@ public class SuperAdminUpdateUserController {
             userService.saveUser(userDTO);
         }
         else if (updateFlag!=null) {
-            userService.update(userDTO);
+            userService.update(userDTO, true);
         }
         else if (deleteFlag!=null) {
            userService.deleteUser(userDTO.getId());
         }
+
         return "redirect:/getAllUsers";
     }
 }

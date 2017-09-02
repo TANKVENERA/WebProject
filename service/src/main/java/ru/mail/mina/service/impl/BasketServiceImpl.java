@@ -2,7 +2,6 @@ package ru.mail.mina.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import ru.mail.mina.repository.dao.AdGenericHibernateDao;
@@ -14,9 +13,8 @@ import ru.mail.mina.repository.model.User;
 import ru.mail.mina.service.dto.BasketService;
 import ru.mail.mina.service.model.AdDTO;
 import ru.mail.mina.service.model.AppUserPrincipal;
-import ru.mail.mina.service.model.BasketDTO;
 import ru.mail.mina.service.util.AdConverter;
-import ru.mail.mina.service.util.BasketConverter;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,7 +25,7 @@ import java.util.List;
 @Service
 public class BasketServiceImpl implements BasketService {
 
-    private final  BasketGenericHibernateDao basketGenericHibernateDao;
+    private final BasketGenericHibernateDao basketGenericHibernateDao;
     private final AdGenericHibernateDao adGenericHibernateDao;
     private final UserGenericHibernateDao userGenericHibernateDao;
 
@@ -64,9 +62,9 @@ public class BasketServiceImpl implements BasketService {
     @Transactional
     public List<AdDTO> findAll() {
         List<Ad> adList = basketGenericHibernateDao.getAll(getUser().getId());
-        List<AdDTO> adDTOList= new ArrayList<>();
+        List<AdDTO> adDTOList = new ArrayList<>();
         for (Ad ad : adList) {
-           adDTOList.add(AdConverter.convert(ad));
+            adDTOList.add(AdConverter.convert(ad));
         }
         return adDTOList;
     }

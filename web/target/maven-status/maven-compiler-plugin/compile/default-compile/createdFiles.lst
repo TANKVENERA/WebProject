@@ -11,6 +11,7 @@ ru\mail\mina\web\initializer\SecurityWebApplicationInitializer.class
 ru\mail\mina\web\AdminController.class
 ru\mail\mina\web\BasketController.class
 ru\mail\mina\web\config\SecurityConfig.class
+ru\mail\mina\web\util\Pagination.class
 ru\mail\mina\web\config\AppConfig.class
 ru\mail\mina\web\initializer\ApplicationInitializer.class
 ru\mail\mina\web\SuperAdminUpdateAdController.class

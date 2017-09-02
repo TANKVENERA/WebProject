@@ -5,8 +5,6 @@ import org.springframework.stereotype.Repository;
 import ru.mail.mina.repository.dao.BasketGenericHibernateDao;
 import ru.mail.mina.repository.model.Ad;
 import ru.mail.mina.repository.model.Basket;
-import ru.mail.mina.repository.model.User;
-
 import javax.persistence.Query;
 import java.util.List;
 

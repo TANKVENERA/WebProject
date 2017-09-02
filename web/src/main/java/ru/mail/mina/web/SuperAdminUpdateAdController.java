@@ -74,7 +74,6 @@ public class SuperAdminUpdateAdController {
             Date date = new Date();
             adDTO.setDate(format.format(date));
             adService.saveAd(adDTO);
-//            return "adminUpdAd";
         }
         else if (updateFlag!=null) {
            adService.updateAd(adDTO);

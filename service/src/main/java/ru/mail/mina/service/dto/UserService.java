@@ -15,7 +15,7 @@ public interface UserService {
 
     UserDTO getByUserName(String username);
 
-    void update (UserDTO userDTO);
+    void update (UserDTO userDTO, boolean flag);
 
     void saveOrUpdate(UserDTO userDTO);
 

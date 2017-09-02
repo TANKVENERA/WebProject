@@ -7,6 +7,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.FileCopyUtils;
+import org.springframework.web.multipart.MultipartFile;
 import ru.mail.mina.repository.dao.NewsGenericHibernateDao;
 import ru.mail.mina.repository.dao.UserGenericHibernateDao;
 import ru.mail.mina.repository.model.NewsEntity;
@@ -125,24 +126,27 @@ public class NewsServiceImpl implements NewsService {
     }
 
     private NewsEntity getNewsEntity(NewsDTO newsDTO) throws IOException {
+        Integer id = newsDTO.getId();
+        String date = newsDTO.getDate();
+        MultipartFile multipartFile = newsDTO.getFile();
         String finalPath;
-        String fileName = newsDTO.getDate() == null ? getById(newsDTO.getId()).getDate() : newsDTO.getDate();
+        String fileName = date == null ? getById(id).getDate() : date;
         String fileLocation = environment.getProperty("upload.newsLocation") + fileName + "\\";
         File file = new File(fileLocation);
         if (!file.exists()) {
             NewsEntity newsEntity = new NewsEntity();
             file.mkdirs();
             finalPath = fileLocation + fileName;
-            FileCopyUtils.copy(newsDTO.getFile().getBytes(), new File(finalPath)); // из переменной MultiPartFile file извлекается картинка
+            FileCopyUtils.copy(multipartFile.getBytes(), new File(finalPath)); // из переменной MultiPartFile file извлекается картинка
             newsEntity.setFilePath(fileLocation);
             newsEntity.setFileName(fileName);
             return newsEntity;
         } else {
-            NewsEntity newsEntity = getById(newsDTO.getId()).getNewsEntity();
-            if (!newsDTO.getFile().isEmpty()) {
+            NewsEntity newsEntity = getById(id).getNewsEntity();
+            if (!multipartFile.isEmpty()) {
                 String newFileName = new SimpleDateFormat("dd-MM-yyyy HH-mm").format(new Date());
                 finalPath = fileLocation + newFileName;
-                FileCopyUtils.copy(newsDTO.getFile().getBytes(), new File(finalPath));
+                FileCopyUtils.copy(multipartFile.getBytes(), new File(finalPath));
                 newsEntity.setFileName(newFileName);
             }
             return newsEntity;

@@ -3,14 +3,9 @@ package ru.mail.mina.repository.impl;
 import org.hibernate.Criteria;
 import org.hibernate.criterion.Restrictions;
 import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
 import ru.mail.mina.repository.dao.AdGenericHibernateDao;
 import ru.mail.mina.repository.model.Ad;
-import ru.mail.mina.repository.model.User;
-
-
 import javax.persistence.Query;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -47,8 +42,8 @@ public class AdGenericHibernateDaoImpl extends GenericHibernateDaoImpl<Ad, Integ
         if (!priceTo.isEmpty()) {
             criteria.add(Restrictions.le("price", Integer.valueOf(priceTo)));
         }
-        criteria.setFirstResult(0);
-        criteria.setMaxResults(5);
+//        criteria.setFirstResult(1);
+//        criteria.setMaxResults(4);
         List<Ad> list = criteria.list();
         return list;
     }
@@ -66,4 +61,14 @@ public class AdGenericHibernateDaoImpl extends GenericHibernateDaoImpl<Ad, Integ
         return list;
     }
 
+
+    @Override
+    public List<Ad> getAll(Integer page) {
+        int limit = 3;
+        Query query = getSession().createQuery(
+                "from Ad");
+        query.setFirstResult((page-1)*limit);
+        query.setMaxResults(limit);
+        return (List<Ad>) query.getResultList();
+    }
 }

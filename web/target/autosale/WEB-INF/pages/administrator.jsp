@@ -43,17 +43,17 @@
                              style="display: inline-block"/>
                 </div>
                 <div class=col-md-1>
-                    <button class="btn btn-default" type="submit" name="save" style="height: 40px;  border: 0px; font-size: unset;  background: #9fd81b;
+                    <button class="btn btn-default" type="submit" name="save" style="height: 40px;  border: 0; font-size: unset;  background: #9fd81b;
                                     color: #fff; font-weight: 700; margin-left: -5px"/>
                     Cохранить</button>
                 </div>
                 <div class=col-md-1>
-                    <button class="btn btn-default" type="submit" name="update" style="height: 40px;  border: 0px; font-size: unset;  background: green;
+                    <button class="btn btn-default" type="submit" name="update" style="height: 40px;  border: 0; font-size: unset;  background: green;
                                            color: #fff; font-weight: 700"/>
                     Oбновить</button>
                 </div>
                 <div class=col-md-1>
-                    <button class="btn btn-default"  name="delete" style="height: 40px;  border: 0px; font-size: unset;  background: red;
+                    <button class="btn btn-default"  name="delete" style="height: 40px;  border: 0; font-size: unset;  background: red;
                                            color: #fff; font-weight: 700"/>
                     Удалить</button>
                 </div>

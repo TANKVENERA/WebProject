@@ -49,9 +49,6 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 35px;
 }
 
-.centered {
-    text-align: center;
-}
 
 .navbar {
     font-weight: 100;
@@ -82,7 +79,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #4AAAD2;
     color: #fff;
     border-radius: 10px;
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, .80);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .80);
 }
 
 .maian a {
@@ -115,8 +112,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container {
-    padding-right: 0px;
-    padding-left: 0px;
+    padding-right: 0;
+    padding-left: 0;
 
     /* background-color: #2f6880;*/
 }
@@ -141,12 +138,7 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom-right-radius: 10px;
 }
 
-.main_menu_button {
-    background-color: transparent;
-    border: medium none;
-    font-size: 25px;
-    color: #fff;
-}
+
 
 .carousel img {
     min-width: 500px;
@@ -238,14 +230,14 @@ button[submit] {
     height: 400px;
     margin: auto;
     position: absolute;
-    top: 0px;
-    bottom: 0px;
-    right: 0px;
+    top: 0;
+    bottom: 0;
+    right: 0;
     left: -180px;
     background: black;
     border: 4px solid #222;
     padding: 20px;
-    box-shadow: 0px 0px 50px 5px;
+    box-shadow: 0 0 50px 5px;
     border-radius: 10px;
 }
 
@@ -269,7 +261,7 @@ input[modal] {
     box-sizing: border-box;
     border-radius: 5px;
     height: 45px;
-    border: 0px;
+    border: 0;
     font-family: calibri;
     font-size: 15pt;
     text-align: center;
@@ -309,7 +301,7 @@ input[modal] {
     background-color: #ededed;
     height: 230px;
     border-radius: 10px;
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, .80);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .80);
     width: max-content;
     margin: 10px auto;
 }
@@ -348,7 +340,7 @@ a[cursiv] {
     font-family: cursive;
     color: black;
     text-decoration: none;
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, .80);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .80);
 }
 
 ul[align] {
@@ -385,7 +377,7 @@ ul[align] {
     border-radius: 5px;
     height: 40px;
     border: 1px solid rgba(17, 17, 17, 0.17);
-    margin: 0px;
+    margin: 0;
 }
 #file {
     visibility: hidden;
@@ -412,25 +404,16 @@ label[in]:hover{
     width: 40%;
     padding: 30px;
 }
-#imgpreview{
-    margin: 10px;
-    width: 220%;
-    margin-left: -50%;
-}
 #imgprev{
     margin: 10px;
     width: 220%;
     margin-left: -50%;
 }
-.imgClass {
-    margin: 10px;
-    border: 5px solid #efd425;
-    border-radius: 6px;
-}
+
 input[profile]{
     height: 40px;
     border-radius: 3px;
-    border: 0px; transition: 0.3ms;
+    border: 0; transition: 0.3ms;
     background: #009688;
     color: #fff; font-weight: 700;
     margin-left: 40%;
@@ -466,7 +449,7 @@ input[profile]{
     background-color: #ededed;
     height: 645px;
     border-radius: 10px;
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, .80);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .80);
     width: max-content;
     margin: 10px auto;
 }
@@ -481,7 +464,7 @@ a[c] {
 }
 button[super] {
     height: 40px;
-    border: 0px;
+    border: 0;
     font-size: unset;
     background: #FFFFFF;
     color: black;

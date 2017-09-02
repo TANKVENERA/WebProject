@@ -1,19 +1,14 @@
 package ru.mail.mina.repository.impl;
 
-import org.hibernate.Hibernate;
-import org.hibernate.Query;
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
 import ru.mail.mina.repository.dao.GenericHibernateDao;
-
 import java.io.Serializable;
-import java.util.HashSet;
-import java.util.Iterator;
 import java.util.List;
-import java.util.Set;
+
 
 /**
  * Created by Администратор on 13.07.2017.
@@ -27,10 +22,10 @@ public abstract class GenericHibernateDaoImpl<T extends Serializable, ID extends
 
     private Class<T> clazz;
 
-
     public GenericHibernateDaoImpl(Class<T> clazz) {
         this.clazz = clazz;
     }
+
 
     protected Session getSession() {
         return this.sessionFactory.getCurrentSession();
@@ -45,7 +40,7 @@ public abstract class GenericHibernateDaoImpl<T extends Serializable, ID extends
     @Override
     public void update(T entity) {
         try {
-        getSession().update(entity);
+            getSession().update(entity);
         } catch (Exception e) {
             e.printStackTrace();
         }

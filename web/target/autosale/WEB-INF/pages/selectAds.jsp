@@ -45,9 +45,19 @@
         </div>
         <div horizontal="hor" class="basket">
             <security:authorize access="isAuthenticated()">
-                <a href="#" class="changeable"><i class="fa fa-shopping-basket fa-3x" aria-hidden="true"></i></a>
+                <a href="${pageContext.request.contextPath}/addToBasket/<c:out value="${ad.id}"/>" class="changeable"><i
+                        class="fa fa-shopping-basket fa-3x" aria-hidden="true"></i></a>
             </security:authorize>
         </div>
     </div>
+
 </c:forEach>
+<div style="text-align: center; ">
+    <ul>
+        <li style="list-style-type: none"><c:forEach begin="${startpage}" end="${endpage}" var="p">
+            <a href="<c:url value="/getAllAds" ><c:param name="page" value="${p}"/>${p}</c:url>">${p}</a>
+        </c:forEach></li>
+    </ul>
+
+</div>
 <script src="resources/script/changeColor.js"></script>

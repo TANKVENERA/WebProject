@@ -19,6 +19,7 @@
             <f:input id="id" value="${adList.color}" path="color" type="hidden"/>
             <f:input id="id" value="${adList.transmission}" path="transmission" type="hidden"/>
             <f:input id="id" value="${adList.mileAge}" path="mileAge" type="hidden"/>
+            <f:input id="id" value="${adList.user}" path="user" type="hidden"/>
             <div class="row">
                 <div class=col-md-1 style="width: 90px">
                     <f:input id="id" value="${adList.id}" path="id" type="text" class="form-control input-md"/>
@@ -37,7 +38,7 @@
                 </div>
                 <div class=col-md-1>
                     <f:input id="title" value="${adList.price}" path="price" type="text"
-                             class="form-control input-md"/>
+                             class="form-control input-md" />
                 </div>
                 <div class=col-md-1>
                     <f:input id="title" value="${adList.yearOfIssue}" path="yearOfIssue" type="text"
@@ -64,7 +65,7 @@
                              style="display: inline-block"/>
                 </div>
                 <div class=col-md-1>
-                    <button class="btn btn-default" type="submit" name="save" style="height: 40px;  border: 0px; font-size: unset;  background: #9fd81b;
+                    <button class="btn btn-default" type="submit" name="save" style="height: 40px;  border: 0; font-size: unset;  background: #9fd81b;
                                     color: #fff; font-weight: 700; margin-left: -5px"/>
                     Cохранить</button>
                 </div>

@@ -11,18 +11,16 @@ border-bottom-left-radius:15px;">
             <a href="${pageContext.request.contextPath}/userAds" class="swagBtn" style="width: 200px">Мои объявления</a>
         </div>
         <div>
-            <a href="#" class="swagBtn">Закладки</a>
+            <a href="${pageContext.request.contextPath}/notes" class="swagBtn">Закладки</a>
         </div>
         <div>
             <a href="#" class="swagBtn">Сообщения</a>
         </div>
         <div>
-            <a href="#" class="swagBtn">Настройки</a>
-
+            <a href="${pageContext.request.contextPath}/updateBlank" class="swagBtn">Настройки</a>
         </div>
         <div class="exit" style="padding-top: 50px; padding-bottom: 50px; ">
             <a href="<c:url value="/logout" />" class="swagBtn">Выход</a>
         </div>
     </div>
-
 </div>

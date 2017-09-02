@@ -1,15 +1,14 @@
 package ru.mail.mina.repository.impl;
 
-import org.hibernate.Query;
-import org.hibernate.Session;
-import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 import ru.mail.mina.repository.dao.UserGenericHibernateDao;
 import ru.mail.mina.repository.model.User;
 
 
-import java.util.List;
+import javax.persistence.Query;
+
 
 
 /**
@@ -33,8 +32,9 @@ public class UserHibernateDaoImpl extends GenericHibernateDaoImpl<User, Integer>
         try {
             String hql = "SELECT ad.user  from Ad ad WHERE ad.id=:adId ";
             Query query =  getSession().createQuery(hql);
+
             query.setParameter("adId", adId); // set a parameter for transfering  adId value into hql query
-            user = (User) query.list().get(0);
+            user = (User) query.getResultList().get(0);
         } catch (Exception e) {
         }
         return user;
@@ -46,7 +46,7 @@ public class UserHibernateDaoImpl extends GenericHibernateDaoImpl<User, Integer>
         String hql = "From User  u where u.username=:username";
        Query query =  getSession().createQuery(hql);
         query.setParameter("username", username);
-        User user = (User) query.uniqueResult();
+        User user = (User) query.getResultList().get(0);
         return user;
     }
 }

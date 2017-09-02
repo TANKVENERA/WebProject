@@ -2,7 +2,6 @@ package ru.mail.mina.service.model;
 
 import org.springframework.web.multipart.MultipartFile;
 import ru.mail.mina.repository.model.AdEntity;
-import ru.mail.mina.repository.model.NewsEntity;
 import ru.mail.mina.repository.model.Comment;
 import ru.mail.mina.repository.model.User;
 

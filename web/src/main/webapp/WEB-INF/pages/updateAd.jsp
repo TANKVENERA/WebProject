@@ -24,7 +24,7 @@
                         <ul v="a">
                             <li><a c="c"><strong style="color: red; font-size: 35px">${userAd.price}$
                                 <f:input id="title" value="${userAd.price}" path="price" type="text" size="3"
-                                         cssStyle="margin-left: 12%"/>
+                                         cssStyle="margin-left: 7%"/>
                             </strong></a></li>
                         </ul>
                         <ul v="a">

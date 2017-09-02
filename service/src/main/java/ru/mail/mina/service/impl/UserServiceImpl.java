@@ -45,9 +45,11 @@ public class UserServiceImpl implements UserService {
 
     @Override
     @Transactional
-    public void update(UserDTO userDTO) {
+    public void update(UserDTO userDTO, boolean flag) {
         User user = UserConverter.convert(userDTO);
-        user.setPassword(bCryptPasswordEncoder.encode(userDTO.getPassword()));
+        if (flag) {
+            user.setPassword(bCryptPasswordEncoder.encode(userDTO.getPassword()));
+        }
         user.setRole(Role.ROLE_User);
         userGenericHibernateDao.update(user);
     }

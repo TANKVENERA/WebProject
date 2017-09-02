@@ -5,12 +5,11 @@ import org.springframework.web.context.support.AnnotationConfigWebApplicationCon
 import org.springframework.web.servlet.DispatcherServlet;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 import ru.mail.mina.web.config.AppConfig;
-
 import javax.servlet.MultipartConfigElement;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRegistration;
-import static org.springframework.http.HttpHeaders.LOCATION;
+
 /**
  * Created by Администратор on 16.08.2017.
  */

@@ -1,7 +1,6 @@
 package ru.mail.mina.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import ru.mail.mina.repository.dao.NewsEntityGenericHibernateDao;

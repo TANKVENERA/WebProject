@@ -1,13 +1,16 @@
 package ru.mail.mina.web;
 
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import ru.mail.mina.service.dto.AdService;
 import ru.mail.mina.service.model.AdDTO;
 import ru.mail.mina.service.model.UserDTO;
+import ru.mail.mina.web.util.Pagination;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.*;
@@ -22,6 +25,8 @@ import java.util.List;
 @Controller
 public class AdController {
 
+    final static Logger logger = Logger.getLogger(AdController.class);
+
     private final AdService adService;
 
 
@@ -30,9 +35,11 @@ public class AdController {
         this.adService = adService;
     }
 
-    @RequestMapping (value = "/selectAds", method = RequestMethod.POST)
-    public ModelAndView filterAds(HttpServletRequest request, Model model) {
-       model.addAttribute("user", new UserDTO());
+    @RequestMapping(value = "/selectAds", method = RequestMethod.POST)
+    public ModelAndView filterAds(HttpServletRequest request, ModelMap model) {
+
+
+        model.addAttribute("user", new UserDTO());
         String model1 = request.getParameter("CarModel");
         String mark = request.getParameter("CarMark");
         String yearFrom = request.getParameter("YearOfIssueFrom");
@@ -44,9 +51,16 @@ public class AdController {
     }
 
     @RequestMapping(value = "/getAllAds", method = RequestMethod.GET)
-    public ModelAndView getAllAds(Model model) {
+    public ModelAndView getAllAds(ModelMap model, @RequestParam(required = false, value = "page") Integer page) {
+        Integer startpage = Pagination.startPage((page==null) ? page = 0 : page);
+        Integer size = adService.findAll().size();
+        Integer endpage = (size % 3 == 0) ? (size / 3) : (size / 3 + 1);
+        System.out.println(endpage);
+        model.addAttribute("startpage", startpage);
+        model.addAttribute("endpage", endpage);
         model.addAttribute("user", new UserDTO());
-        List<AdDTO> listAds = adService.findAll();
+        List<AdDTO> listAds = adService.getAll(page);
+        model.addAttribute("listAds", listAds);
         return new ModelAndView("selectAds", "listAds", listAds);
     }
 
@@ -54,6 +68,7 @@ public class AdController {
     public ModelAndView getUserAds(Model model) {
         model.addAttribute("user", new UserDTO());
         List<AdDTO> userAds = adService.getAdsByUser();
+
         return new ModelAndView("userAds", "userAds", userAds);
     }
 
@@ -65,7 +80,7 @@ public class AdController {
     }
 
     @RequestMapping(value = "/updateAd", method = RequestMethod.POST)
-    public String updateUserAd (@ModelAttribute ("userAd") AdDTO adDTO, HttpServletRequest request, Model model) throws IOException {
+    public String updateUserAd(@ModelAttribute("userAd") AdDTO adDTO, HttpServletRequest request, Model model) throws IOException {
         DateFormat format = new SimpleDateFormat("dd-MM-yyyy HH-mm");
         adDTO.setCarDescription(request.getParameter("text"));
         Date date = new Date();
@@ -74,16 +89,16 @@ public class AdController {
         return "profile";
     }
 
-    @RequestMapping(value = "/ad/{id}" , method = RequestMethod.GET)
-    public String showUserAd(Model model, @PathVariable Integer id){
+    @RequestMapping(value = "/ad/{id}", method = RequestMethod.GET)
+    public String showUserAd(Model model, @PathVariable Integer id) {
         AdDTO adDTO = adService.getById(id);
         model.addAttribute("user", new UserDTO());
         model.addAttribute("userAd", adDTO);
         return "updateAd";
     }
 
-    @RequestMapping (value = "/createAd", method = RequestMethod.POST)
-    public String createAd(Model model, @ModelAttribute ("ad")AdDTO adDTO, HttpServletRequest request) throws IOException {
+    @RequestMapping(value = "/createAd", method = RequestMethod.POST)
+    public String createAd(Model model, @ModelAttribute("ad") AdDTO adDTO, HttpServletRequest request) throws IOException {
         model.addAttribute("user", new UserDTO());
         DateFormat format = new SimpleDateFormat("dd-MM-yyyy HH-mm");
         Date date = new Date();
@@ -92,5 +107,6 @@ public class AdController {
         adService.saveAd(adDTO);
         return "redirect:/userAds";
     }
+
 
 }

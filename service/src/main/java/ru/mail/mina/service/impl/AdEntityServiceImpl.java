@@ -15,9 +15,10 @@ import java.io.File;
 @Service
 public class AdEntityServiceImpl implements AdEntityService{
 
-    @Autowired
+
     private final AdEntityGenericHibernateDao genericHibernateDao;
 
+    @Autowired
     public AdEntityServiceImpl(AdEntityGenericHibernateDao genericHibernateDao) {
         this.genericHibernateDao = genericHibernateDao;
     }

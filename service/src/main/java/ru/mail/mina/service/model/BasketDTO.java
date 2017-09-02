@@ -1,8 +1,7 @@
 package ru.mail.mina.service.model;
 
 import ru.mail.mina.repository.model.Ad;
-import ru.mail.mina.repository.model.User;
-import java.util.List;
+
 
 
 
